@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Event>
+
+@{
+    ViewBag.Title = Resource.EventsTitle;
+}
+
+@Html.Partial("_FutureEvents")
+
+<div class="center">
+    @Html.ActionLink(Resource.Archive, "Archive", null, new { @class = "mediumButton" })
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink(Resource.CreateEventTitle, "Create", null, new { @class = "mediumButton" })
+    }
+</div>

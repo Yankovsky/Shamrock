@@ -1,0 +1,17 @@
+﻿@{    
+    ViewBag.Title = Resource.AboutTitle;
+}
+
+<pre id="aboutText">
+    @Resource.About
+</pre>
+
+<div class="center">
+    <a href="@Url.Action("Create", "Comments", null)" class="mediumButton openDialog" data_dialog_id="commentDialog" data_dialog_title="@Resource.Comment">
+        @Resource.ContactUsTitle
+    </a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink(Resource.CommentsTitle, "Index", "Comments", null, new { @class = "mediumButton" })
+    }
+</div>

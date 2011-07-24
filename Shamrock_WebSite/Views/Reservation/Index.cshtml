@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.TableReservation>
+
+@{
+    ViewBag.Title = Resource.ReservationTitle;
+    var date = (DateTime)ViewBag.Date;
+    var tommorow = date.AddDays(1);
+    var yesterday = date.AddDays(-1);
+}
+
+@section Css
+{
+    <link href="@Url.Content("~/Content/Reservation.css")" rel="stylesheet" type="text/css" />
+}
+
+<div id="reservationContainer">
+    <div id="reservationMap">
+        @if (User.Identity.IsAuthenticated)
+        {
+            for (int i = 1; i <= 36; i++)
+            {
+                var id = "table" + @i;
+                <div class="table" id="@id">
+                    <p>@i</p>
+                </div>
+            }
+        }
+        else
+        {
+            for (int i = 1; i <= 36; i++)
+            {
+                var id = "table" + @i;
+                if (Model.Any(tr => tr.TableId == i))
+                {
+                    <div class="table reservedTable" id="@id"></div>
+                }
+                else
+                {
+                    <a href="@Url.Action("Reserve", new { tableId = i, year = date.Year, month = date.Month, day = date.Day, returnUrl = Request.RawUrl })"
+                       class="table openDialog" id="@id" data_dialog_id="reservationDialog" data_dialog_title="@Resource.ReservationTitle @i"></a>
+                }
+            }
+        }
+        <span class="big" id="freeTableLabel">@Resource.FreeTable</span>
+        <span class="big" id="reservedTableLabel">@Resource.ReservedTable</span>
+        <span class="average" id="dartsLabel">@Resource.Darts</span>
+        <span class="average" id="tvLabel">@Resource.TV</span>    
+        <span class="average" id="enterLabel">@Resource.Enter</span>
+        <span class="small" id="barWorkingAreaLabel1">@Resource.BarWorkingArea</span>
+        <span class="small" id="barWorkingAreaLabel2">@Resource.BarWorkingArea</span>
+        <span class="small" id="smokingRoomLabel1">@Resource.SmokingRoom</span>
+        <span class="small" id="smokingRoomLabel2">@Resource.SmokingRoom</span>
+        <span class="small" id="nonsmokingRoomLabel">@Resource.NonsmokingRoom</span>
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        foreach (var item in Model.OrderBy(tr => tr.TableId))
+        {
+            <div class="reservationData clear">
+                <div class="tableId">@item.TableId</div>
+                @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+                <div class="time">@item.Time</div>
+                @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+                <div class="name">@item.Name</div>
+                @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+                <div class="phoneNumber">@item.PhoneNumber</div>
+                @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+                <div class="wishes">@item.Wishes</div>
+            </div> 
+            @Html.Image("~/Content/Images/HorizontalDivider.png", "horizontalDivider", new { @class = "horizontalDivider" })
+        }
+    }
+    <div id="datepicker">
+            @if (yesterday >= DateTime.Today)
+            {
+                @Html.ActionImage("~/Content/Images/MoveLeft.png", "yesterday", "Index", "Reservation",
+                                    new { year = yesterday.Year, month = yesterday.Month, day = yesterday.Day },
+                                    null, new { @class = "moveButton" })
+            }
+            <div id="reservationDate">
+                @date.ToLongDateString()
+            </div>
+            @Html.ActionImage("~/Content/Images/MoveRight.png", "tommorow", "Index", "Reservation",
+                                new { year = tommorow.Year, month = tommorow.Month, day = tommorow.Day },
+                                null, new { @class = "moveButton" })
+    </div>
+</div>

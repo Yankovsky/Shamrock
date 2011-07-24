@@ -1,0 +1,45 @@
+﻿@model Shamrock_WebSite.Models.Event
+
+@using (Html.BeginForm(null, "Events", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <fieldset>
+        <legend>@Resource.Event</legend>
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.ImagePath)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EventType)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.EventTypeId, (IEnumerable<SelectListItem>)ViewBag.EventTypes)
+        </div>
+        
+        @Html.Partial("_Event_Locales", new List<Shamrock_WebSite.Models.Event_Locale>(Model.Events_Locale))
+
+        <div>
+            @if (Model != null && !String.IsNullOrWhiteSpace(Model.ImagePath))
+            {
+                @Html.Image(Model.ImagePath, "eventImage", null, true) 
+            }
+            @Html.Partial("_ImageUpload")
+        </div>
+
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton"  />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

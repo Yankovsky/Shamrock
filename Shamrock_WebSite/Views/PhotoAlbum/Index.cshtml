@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.PhotoAlbum>
+           
+@{
+    ViewBag.Title = Resource.GalleryTitle;
+}
+
+<div id="photoAlbums">
+    @foreach (var photoAlbum in Model)
+    {
+        var id = photoAlbum.Id.ToString();
+        <div class="photoAlbumWrapper">       
+            <div class="photoAlbum">
+                <a href="@Url.Action("Details", new { id = photoAlbum.Id })">
+                    <h3>@Html.Truncate(photoAlbum.Locale.DisplayName, "...", 30)</h3>
+                    @Html.RandomImage(Path.Combine("~/Content/Images/PhotoAlbum", id), "photoAlbum" + id, new { @class = "randomImage" }, true)
+                </a>
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="moveButtons">
+                    @Html.ActionImage("~/Content/Images/MoveLeft.png", "moveLeft", "MoveUp", "PhotoAlbum", new { id = id }, null, new { @class = "moveButton" })
+                    @Html.ActionImage("~/Content/Images/MoveRight.png", "moveRight", "MoveDown", "PhotoAlbum", new { id = id }, null, new { @class = "moveButton" })
+                </div>
+            } 
+        </div>
+    }
+</div>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="center clear">
+        @Html.ActionLink(Resource.CreatePhotoAlbumTitle, "Create", "PhotoAlbum", null, new { @class = "mediumButton" })
+    </div>
+}

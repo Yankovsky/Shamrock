@@ -1,0 +1,27 @@
+﻿@model IList<Shamrock_WebSite.Models.Dish_Locale>
+
+@for (int i = 0; i < Model.Count(); i++)
+{
+    <div>
+        <fieldset>
+            <legend>@Model[i].Culture</legend>
+            @Html.HiddenFor(model => model[i].DishId)
+            @Html.HiddenFor(model => model[i].Culture)
+            <div class="editor-label">
+                @Html.LabelFor(model => model[i].DisplayName)
+                @Html.ValidationMessageFor(model => model[i].DisplayName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model[i].DisplayName)
+            </div>
+                        
+            <div class="editor-label">
+                @Html.LabelFor(model => model[i].Portion)
+                @Html.ValidationMessageFor(model => model[i].Portion)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model[i].Portion)
+            </div>
+        </fieldset>
+    </div>
+}

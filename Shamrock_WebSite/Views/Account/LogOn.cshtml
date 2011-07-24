@@ -1,0 +1,34 @@
+﻿@model Shamrock_WebSite.Models.LogOnModel
+
+@{
+    ViewBag.Title = "Log On";
+}
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>@Resource.LogOn</legend>
+
+        @Html.ValidationSummary(true)
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.UserName)
+            @Html.ValidationMessageFor(m => m.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.UserName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Password)
+            @Html.ValidationMessageFor(m => m.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(m => m.Password)
+        </div>
+
+        <p>
+            <input type="submit" value="@Resource.LogOn" class="bigButton" />
+        </p>
+    </fieldset>
+}

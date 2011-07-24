@@ -1,0 +1,154 @@
+﻿/* RESERVATION
+----------------------------------------------------------*/
+#reservationContainer
+{
+    margin-left: -100px;
+	margin-right: -100px;
+	position: relative;
+}
+#datepicker
+{
+    position: absolute;
+    top: 80px;
+    font-size: 13px;
+}
+#reservationDateSelect
+{
+    text-align: center;
+}
+#reservationDate
+{
+    margin: 0 5px 0 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+.reservationData *
+{    
+    vertical-align: middle;
+}
+.reservationData .divider
+{
+    display: inline-block;
+}
+.reservationData .tableId
+{
+    display: inline-block;
+    width: 40px;
+}
+.reservationData .time
+{
+    display: inline-block;
+    width: 60px;
+}
+.reservationData .name
+{
+    display: inline-block;
+    width: 250px;
+}
+.reservationData .phoneNumber
+{
+    display: inline-block;
+    width: 150px;
+}
+.reservationData .wishes
+{
+    display: inline-block;
+}
+#reservationMap
+{
+    left: 180px;
+	background-image: url('Images/ReservationBackground.png');
+	width: 760px;
+	height: 648px;
+	position: relative;
+}
+#reservationMap > span, .table
+{
+	position: absolute;
+	display: table;
+	background-repeat: no-repeat;
+}
+#reservationMap .big
+{
+    font-family: Arial Black;
+    font-size: 15px;
+}
+#reservationMap .average
+{
+    font-family: Arial;
+    font-size: 14px;
+}
+#reservationMap .small
+{
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+}
+#reservationMap a:hover
+{
+	background-position: -200px 0;
+	cursor: hand;
+}
+#reservationMap .reservedTable
+{
+	background-position: -400px 0;
+	cursor: default;
+}
+#reservationMap .table p
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+#table1  { left: 181px; top: 526px; width:  48px; height:  72px; background-image: url('Images/TableSprite5.png'); }
+#table2  { left: 363px; top: 521px; width: 122px; height:  86px; background-image: url('Images/TableSprite1.png'); }
+#table3  { left: 471px; top: 450px; width:  78px; height:  96px; background-image: url('Images/TableSprite9.png'); }
+#table4  { left: 557px; top: 374px; width:  84px; height:  68px; background-image: url('Images/TableSprite10.png'); }
+#table5  { left: 496px; top: 522px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table6  { left: 559px; top: 522px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table7  { left: 631px; top: 522px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table8  { left: 631px; top: 446px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table9  { left: 631px; top: 389px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table10 { left: 672px; top: 178px; width:  46px; height:  62px; background-image: url('Images/TableSprite2.png'); }
+#table11 { left: 555px; top: 178px; width:  62px; height:  86px; background-image: url('Images/TableSprite3.png'); }
+#table12 { left: 452px; top: 178px; width:  62px; height:  86px; background-image: url('Images/TableSprite3.png'); }
+#table13 { left: 453px; top:  44px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table14 { left: 543px; top:  44px; width:  62px; height:  62px; background-image: url('Images/TableSprite4.png'); }
+#table15 { left: 613px; top:  46px; width: 104px; height:  62px; background-image: url('Images/TableSprite8.png'); }
+
+
+#table16 { left: 100px; top: 554px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table17 { left: 125px; top: 554px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table18 { left: 270px; top: 554px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table19 { left: 295px; top: 554px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table20 { left:  95px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table21 { left: 120px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table22 { left: 145px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table23 { left: 170px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table24 { left: 195px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table25 { left: 220px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table26 { left: 245px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table27 { left: 378px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table28 { left: 403px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table29 { left: 428px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table30 { left: 453px; top: 436px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table31 { left: 488px; top: 423px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table32 { left: 505px; top: 406px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table33 { left: 522px; top: 389px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table34 { left: 535px; top: 359px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table35 { left: 535px; top: 334px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+#table36 { left: 535px; top: 309px; width:  24px; height:  24px; background-image: url('Images/TableSprite7.png'); }
+
+#freeTableLabel       { left: 193px; top: 80px;  font-size: 17px; }
+#reservedTableLabel   { left: 193px; top: 170px; font-size: 17px; }
+#dartsLabel           { left: 193px; top: 245px; font-size: 17px; }
+#tvLabel              { left: 193px; top: 285px; font-size: 17px; }
+#enterLabel           { left: 0px;   top: 523px; }
+#barWorkingAreaLabel1 { left: 160px; top: 370px; }
+#barWorkingAreaLabel2 { left: 380px; top: 345px; }
+#smokingRoomLabel1    { left: 170px; top: 480px; }
+#smokingRoomLabel2    { left: 450px; top: 135px; }
+#nonsmokingRoomLabel  { left: 375px; top: 480px; }

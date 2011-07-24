@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Event>
+       
+<div class="pagingList">
+    @Html.Partial("_EventsList", Model)
+    <div class="paginator">
+        @Html.PageLinks((int)ViewBag.CurrentPage, (int)ViewBag.TotalPages, x => Url.Action("Archive", new { page = x }))
+    </div>
+</div>

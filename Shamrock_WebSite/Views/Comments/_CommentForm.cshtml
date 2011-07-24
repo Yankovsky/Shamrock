@@ -1,0 +1,32 @@
+﻿@model Shamrock_WebSite.Models.Comment
+
+@using (Ajax.BeginForm("Create", "Comments", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "commentDialog" }))
+{
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Author)
+        @Html.ValidationMessageFor(model => model.Author)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Author)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Email)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Body)
+        @Html.ValidationMessageFor(model => model.Body)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Body)
+    </div>
+
+    <p>
+        <input type="submit" value="@Resource.Save" class="bigButton" />
+    </p>
+}

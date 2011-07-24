@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Event>
+
+@foreach (var item in Model)
+{
+    <div class="eventWrapper">
+        @Html.Partial("_Event", item)
+    </div>
+}

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Dish>
+           
+<div id="dishesList" class="pagingList">
+    @foreach (var item in Model)
+    {
+        <div class="dish">
+            <div class="name">
+                @Html.DisplayFor(modelItem => item.Locale.DisplayName)
+            </div>
+            @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+            <div class="portion">
+                @Html.DisplayFor(modelItem => item.Locale.Portion)
+            </div>
+            @Html.Image("~/Content/Images/Divider.png", "divider", new { @class = "divider" })
+            <div class="cost">
+                @Html.DisplayFor(modelItem => item.Cost)
+                @Resource.Rur
+            </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="buttons">
+                    @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "Dish", new { dishCategoryName = ViewBag.DishCategoryName, id = item.Id }, new { @class = "editButton" })
+                    @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "Dish", new { dishCategoryName = ViewBag.DishCategoryName, id = item.Id }, new { @class = "deleteButton" })
+                </div>
+            }
+        </div>
+        @Html.Image("~/Content/Images/HorizontalDivider.png", "horizontalDivider", new { @class = "horizontalDivider" })
+    }
+    
+    <div class="paginator clear">
+        @Html.PageLinks((int)ViewBag.CurrentPage, (int)ViewBag.TotalPages, x => Url.Action("Index", "DishCategory", new { page = x }))
+    </div>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="center">
+            @Html.ActionLink(Resource.CreateDishTitle, "Create", "Dish", new { dishCategoryName = ViewBag.DishCategoryName }, new { @class = "mediumButton" })
+        </div>
+    }
+</div>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--ФАЙЛ КОНФИГУРАЦИИ SHAMROCK
+
+    Файл содержит конфигурацию баннеров и список сотрудников, которые должны получать рассылку.
+    Следует добавлять/изменять/удалять только узлы imageLink или staffMember. Изменение других узлов приведёт к непредсказуемым последствиям.
+
+    Для добавления баннера создайте узел <imageLink /> в блоках leftBannersBlock, rightBannersBlock или socialBlock.
+    Обязательно укажите аттрибуты imagePath(путь к картинке, должен обязательно начинаться с ~/Content/Images/ImageLinks) и alt(альтернативный текст).
+    Чтобы сделать баннер кликабельным добавьте аттрибут link(ссылка, должна обязательно начинаться с http://www).
+    Не забудьте добавить картинку на сервере в папку Content/Images/ImageLinks/
+    Пример:
+    ...
+    <rightBannersBlock>
+      ...
+      <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.myWebSite.com/SpecialOffer" />
+      ...
+    </rightBannersBlock>
+    ...
+    
+    Для добавления сотрудника, который должен получать SMS рассылку создайте узел <staffMember /> в блоке staff.
+    Обязательно укажите аттрибуты name(имя) и phoneNumber(номер телефона).
+    Пример:
+    ...
+    <staff>
+      ...
+      <staffMember name="Bob" phoneNumber="89211234567 />
+      ...
+    </staff>
+    ...
+-->
+<config>
+  <!--Блок баннеров слева. Максимальная ширина баннера 314 пикселей.-->
+  <leftBannersBlock>
+    <imageLink imagePath="~/Content/Images/ImageLinks/Boat.png" alt="prokatkaterov" link="http://www.prokatkaterov.ru" />
+  </leftBannersBlock>
+  <!--Блок баннеров справа. Максимальная ширина баннера 590 пикселей.-->
+  <rightBannersBlock>
+    <imageLink imagePath="~/Content/Images/ImageLinks/Banner.jpg" alt="specialOffer" />
+  </rightBannersBlock>
+  <!--Блок ссылок на социальные сети(vkontakte, twitter, facebook) внизу страницы. Максимальные размеры 140 на 30 пикселей.-->
+  <socialBlock>
+    <imageLink imagePath="~/Content/Images/ImageLinks/Vkontakte.png" alt="vkontakte" link="http://vkontakte.ru/shamrockbar" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/Facebook.png" alt="facebook" link="http://www.facebook.com/shamrock.spb" />
+  </socialBlock>
+  <!--Список персонала.-->
+  <staff>
+    <staffMember name="Андрей" phoneNumber="79516653544" />
+    <staffMember name="Андрей2" phoneNumber="+79516653544" />
+  </staff>
+</config>
+
+<!--ПРИМЕР ФАЙЛА КОНФИГУРАЦИИ. НЕ УДАЛЯТЬ! СКОПИРОВАТЬ СОДЕРЖИМОЕ В СЛУЧАЕ НЕИСПРАВНОСТИ ФАЙЛА КОНФИГУРАЦИИ
+<config>
+  <leftBannersBlock>
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.vkontakte.ru" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.vkontakte.ru" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.vkontakte.ru" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.vkontakte.ru" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.vkontakte.ru" />
+  </leftBannersBlock>
+  <rightBannersBlock>
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.google.com" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.google.com" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.google.com" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/SpecialOffer.png" alt="specialOffer" link="http://www.google.com" />
+  </rightBannersBlock>
+  <socialLinks>
+    <imageLink imagePath="~/Content/Images/ImageLinks/vkontakte.png" alt="vkontakte" link="http://www.vkontakte.ru" />
+    <imageLink imagePath="~/Content/Images/ImageLinks/vkontakte.png" alt="vkontakte" link="http://www.vkontakte.ru" />
+  </socialLinks>
+  <staff>
+    <staffMember name="Андрей" phoneNumber="+79516653544" />
+    <staffMember name="Andrey" phoneNumber="89213426699" />
+  </staff>
+</config>
+-->

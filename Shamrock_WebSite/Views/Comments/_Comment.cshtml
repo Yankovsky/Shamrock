@@ -1,0 +1,12 @@
+﻿@model Shamrock_WebSite.Models.Comment
+
+<div class="comment">
+    <div class="author">@Html.DisplayFor(modelItem => Model.Author)</div>
+    <div class="date">@Html.DisplayFor(modelItem => Model.Date)</div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "Comments", new { id = Model.Id, returnUrl = Request.RawUrl }, new { @class = "deleteButton" }, new { @class = "right" })
+    }
+    <div class="body">@Html.DisplayFor(modelItem => Model.Body)</div>
+    <div class="email">@Html.DisplayFor(modelItem => Model.Email)</div>
+</div>

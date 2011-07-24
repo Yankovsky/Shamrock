@@ -1,0 +1,50 @@
+﻿@model Shamrock_WebSite.Models.Event
+
+@{
+    ViewBag.Title = Resource.Event;
+}
+
+@section Css
+{
+    <link href="@Url.Content("~/lytebox/lytebox.css")" rel="stylesheet" type="text/css" media="screen" />
+}
+
+@section Scripts
+{
+    <script type="text/javascript" language="javascript" src="/lytebox/lytebox.js"></script>
+}
+
+<div class="event">
+    <div id="leftPart">
+        <div class="date">
+            @Html.Partial("_EventDate", Model.Date)
+        </div>
+        <div class="type">
+            @Html.Image(Model.EventType.ImagePath, Model.EventType.Name)
+        </div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="buttons">
+                @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "Events", new { id = Model.Id, returnUrl = Request.RawUrl }, new { @class = "editButton" })
+                @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "Events", new { id = Model.Id, returnUrl = Request.RawUrl }, new { @class = "deleteButton" })
+            </div>
+        }
+    </div>
+    <div class="rightPart">
+        <h2>@Model.Locale.DisplayName</h2>
+        <div class="description">
+            @if (!String.IsNullOrWhiteSpace(Model.ImagePath))
+            { 
+                @Html.ActionImage(Url.Thumb(Model.ImagePath), Model.Locale.DisplayName, Url.Content(Model.ImagePath),
+                                  new { }, new { rel = "lyteshow[" + Model.Id + "]", title = Model.Locale.DisplayName })
+            }
+            <pre>
+                @Model.Locale.Description
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="center">
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

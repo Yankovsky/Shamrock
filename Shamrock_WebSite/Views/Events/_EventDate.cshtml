@@ -1,0 +1,11 @@
+﻿@model System.DateTime
+
+@{
+    var day = Model.Day.ToString("00");
+    var month = Model.ToString("MMMM");
+    var year = Model.Year;
+}
+
+<div class="dateDayNumber">@day[0]</div><div class="dateDayNumber">@day[1]</div>
+<div class="dateMonth">@month</div>
+<div class="dateYear">@year</div>

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.ImageLink>
+
+<div id="@ViewBag.ImageLinksBlockName">
+    @foreach (var imageLink in Model)
+    {
+        if (imageLink.Link != null)
+        {
+            @Html.ActionImage(imageLink.ImagePath, imageLink.AlternateText, imageLink.Link)
+        }
+        else
+        {
+            @Html.Image(imageLink.ImagePath, imageLink.AlternateText)
+        }
+    }
+</div>

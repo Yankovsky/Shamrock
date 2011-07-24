@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="@SupportedCulture.Current">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="@ViewBag.Title @Resource.SiteTitle">
+        <title>@ViewBag.Title - @Resource.SiteTitle</title>
+        <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/jquery-ui/jquery-ui-1.8.14.custom.css")" rel="stylesheet" type="text/css" />
+        @RenderSection("Css", false)
+    </head>
+    <body>
+        <div id="page">
+            <div id="containerWrap">
+                <div id="container">
+                    <div id="header">
+                        <div id="languageSelector">
+                            @Html.ActionImage("~/Content/Images/rus.png", "russian", "ChangeCulture", "Account", new { lang = "ru", returnUrl = Request.RawUrl })
+                            @Html.ActionImage("~/Content/Images/eng.png", "english", "ChangeCulture", "Account", new { lang = "en", returnUrl = Request.RawUrl })
+                        </div>
+@*                        <div id="homeBookmark">
+                            @Html.ActionImage("~/Content/Images/Bookmark.png", "bookmark", "#",
+                                              new
+                                              {
+                                                  onmouseover = "this.src='Content/Images/BookmarkHighLight.png'",
+                                                  onmouseout = "this.src='Content/Images/Bookmark.png'"
+                                              },
+                                              new { id = "bookmark" })
+                            @Html.ActionImage("~/Content/Images/Home.png", "bookmark", "Index", "Home", null)
+                        </div>*@
+                        <div id="title">
+                            <h1>
+                                @Html.ActionImage("~/Content/Images/Logo4.png", "Shamrock Irish Bar", "Index", "Home")
+                            </h1>
+                        </div>
+                        <ul id="navigation">
+                            <li>@Html.ActionLink(Resource.MenuTitle, "Index", "DishCategory")</li>
+                            @Html.Image("~/Content/Images/MenuDivider.png", "menuDivider", new { @class = "menuDivider" })
+                            <li id="reservation">
+                                @Html.Image("~/Content/Images/Reservation.png", "reservation", new { id = "reservationPicture" })
+                                @Html.RouteLink(Resource.ReservationTitle, "Reservation")
+                            </li>
+                            @Html.Image("~/Content/Images/MenuDivider.png", "menuDivider", new { @class = "menuDivider" })
+                            <li>@Html.ActionLink(Resource.EventsTitle, "Index", "Events")</li>
+                            @Html.Image("~/Content/Images/MenuDivider.png", "menuDivider", new { @class = "menuDivider" })
+                            <li>@Html.ActionLink(Resource.GalleryTitle, "Index", "PhotoAlbum")</li>
+                            @Html.Image("~/Content/Images/MenuDivider.png", "menuDivider", new { @class = "menuDivider" })
+                            <li>@Html.ActionLink(Resource.MapTitle, "Map", "About")</li>
+                            @Html.Image("~/Content/Images/MenuDivider.png", "menuDivider", new { @class = "menuDivider" })
+                            <li>@Html.ActionLink(Resource.AboutTitle, "Index", "About")</li>
+                        </ul>
+                    </div>
+                    @if (TempData["Result"] != null)
+                    {
+                        <div id="tempMessage">
+                            @TempData["Result"]
+                        </div>
+                    }
+                    <div id="content">
+                        @if (IsSectionDefined("LeftPanel"))
+                        {
+                            <div id="leftPanel">
+                                @RenderSection("LeftPanel", false)
+                            </div>
+                            <div id="mainPanel">
+                                @RenderBody()
+                            </div>    
+                        }
+                        else
+                        {
+                            <div id="singlePanel">
+                                @RenderBody()
+                            </div>
+                        }
+                    </div>
+                    <div id="preFooter">
+                    </div>
+                    <div id="footer">
+                        <div id="footerContent">
+                            <div id="leftFooterBlock">
+                                <p id="socialHeader">@Resource.Social.ToUpper()</p>
+                                @Html.Action("GetImageLinksBlock", "ImageLink", new { ImageLinksBlockName = "SocialNetworkingBlock" })
+                                <div id="credits">
+                                    <p>© "Shamrock" 2011</p>
+                                    @Html.Partial("_ShortContacts")
+                                    <a href="@Url.Action("Create", "Comments", null)" class="link openDialog" data_dialog_id="commentDialog" data_dialog_title="@Resource.Comment">
+                                        @Resource.ContactUsTitle
+                                    </a>
+                                </div>
+                            </div>                      
+                            <div id="loginDisplay">
+                                @Html.Partial("_LogOn")
+                            </div>
+                            <div id="rightFooterBlock">
+                                <ul id="footerNavigation">
+                                    <li>@Html.ActionLink(Resource.MenuTitle, "Index", "DishCategory", null, new { @class = "link" })</li>
+                                    <li>@Html.ActionLink(Resource.ReservationTitle, "Index", "Reservation", null, new { @class = "link" })</li>
+                                    <li>@Html.ActionLink(Resource.EventsTitle, "Index", "Events", null, new { @class = "link" })</li>
+                                    <li>@Html.ActionLink(Resource.GalleryTitle, "Index", "PhotoAlbum", null, new { @class = "link" })</li>
+                                    <li>@Html.ActionLink(Resource.MapTitle, "Map", "About", null, new { @class = "link" })</li>
+                                    <li>@Html.ActionLink(Resource.AboutTitle, "Index", "About", null, new { @class = "link" })</li>
+                                </ul>
+                                @Html.ActionImage("~/Content/Images/Designer.png", "Егор Ракета", "http://www.free-lance.ru/users/dark-rodger", new { id = "designer" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @Html.Script("jquery-1.6.1.min.js")
+        @Html.Script("jquery.unobtrusive-ajax.min.js")
+        @Html.Script("jquery-ui-1.8.14.custom.min.js")
+        @Html.Script("jquery.ui.datepicker-ru.js")
+        @Html.Script("jquery.validate.min.js")
+        @Html.Script("jquery.validate.unobtrusive.min.js")
+        @Html.Script("Shamrock.js")
+        @RenderSection("Scripts", false)
+    </body>
+</html>

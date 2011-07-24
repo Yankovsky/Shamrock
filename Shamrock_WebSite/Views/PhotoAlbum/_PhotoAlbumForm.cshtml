@@ -1,0 +1,22 @@
+﻿@model Shamrock_WebSite.Models.PhotoAlbum
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>@Resource.PhotoAlbum</legend>
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.Order)
+        
+        @Html.Partial("_PhotoAlbum_Locales", new List<Shamrock_WebSite.Models.PhotoAlbum_Locale>(Model.PhotoAlbums_Locale))
+
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

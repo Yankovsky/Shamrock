@@ -1,0 +1,7 @@
+﻿@Html.Image("~/Content/Images/Login.png", "login")
+@if(Request.IsAuthenticated) {
+    @Html.ActionLink(@Resource.LogOff, "LogOff", "Account", new { returnUrl = Request.RawUrl }, null)
+}
+else {
+    @Html.ActionLink(@Resource.LogOn, "LogOn", "Account", new { returnUrl = Request.RawUrl }, null)
+}

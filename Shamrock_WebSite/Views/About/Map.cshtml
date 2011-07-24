@@ -1,0 +1,19 @@
+﻿@{    
+    ViewBag.Title = Resource.MapTitle;
+}
+@section LeftPanel
+{
+    @Html.Partial("_Picture")
+    @Html.Partial("_Contacts")
+}
+
+<div id="map">
+    <iframe width="566" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=dekabristov+street+27+saint-petersburg&amp;hl=@SupportedCulture.Current&amp;sll=59.925883,30.295422&amp;sspn=0.008312,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=ulitsa+Dekabristov,+27,+Admiralteyskiy,+gorod+Sankt-Peterburg,+Admiralteyskiy+administrativnyy+rayon,+Russia&amp;ll=59.929732,30.296516&amp;spn=0.017203,0.048494&amp;z=14&amp;iwloc=A&amp;output=embed">
+    </iframe>
+    <br />
+    <div class="center">
+        <a href="http://maps.google.com/maps?q=dekabristov+street+27+saint-petersburg&amp;hl=@SupportedCulture.Current&amp;sll=59.925883,30.295422&amp;sspn=0.008312,0.01929&amp;ie=UTF8&amp;hq=&amp;hnear=ulitsa+Dekabristov,+27,+Admiralteyskiy,+gorod+Sankt-Peterburg,+Admiralteyskiy+administrativnyy+rayon,+Russia&amp;ll=59.929732,30.296516&amp;spn=0.017203,0.048494&amp;z=14&amp;iwloc=A&amp;source=embed" class="smallButton" >
+            @Resource.ViewLargerMap
+        </a>
+    </div>
+</div>

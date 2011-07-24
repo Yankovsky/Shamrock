@@ -1,0 +1,30 @@
+﻿@model Shamrock_WebSite.Models.Dish
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>@Resource.Dish</legend>
+        
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.DishCategoryId)
+        
+        @Html.Partial("_Dish_Locales", new List<Shamrock_WebSite.Models.Dish_Locale>(Model.Dishes_Locale))
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cost)
+            @Html.ValidationMessageFor(model => model.Cost)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cost)
+        </div>
+        
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton"  />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", "DishCategory", null, new { @class = "smallButton" })
+</div>

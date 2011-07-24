@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ShamrockModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ShamrockModelStoreContainer">
+          <EntitySet Name="Comments" EntityType="ShamrockModel.Store.Comments" store:Type="Tables" />
+          <EntitySet Name="DishCategories" EntityType="ShamrockModel.Store.DishCategories" store:Type="Tables" />
+          <EntitySet Name="DishCategories_Locale" EntityType="ShamrockModel.Store.DishCategories_Locale" store:Type="Tables" />
+          <EntitySet Name="Dishes" EntityType="ShamrockModel.Store.Dishes" store:Type="Tables" />
+          <EntitySet Name="Dishes_Locale" EntityType="ShamrockModel.Store.Dishes_Locale" store:Type="Tables" />
+          <EntitySet Name="Events" EntityType="ShamrockModel.Store.Events" store:Type="Tables" />
+          <EntitySet Name="Events_Locale" EntityType="ShamrockModel.Store.Events_Locale" store:Type="Tables" />
+          <EntitySet Name="EventTypes" EntityType="ShamrockModel.Store.EventTypes" store:Type="Tables" />
+          <EntitySet Name="ImageLinkCategories" EntityType="ShamrockModel.Store.ImageLinkCategories" store:Type="Tables" />
+          <EntitySet Name="ImageLinks" EntityType="ShamrockModel.Store.ImageLinks" store:Type="Tables" />
+          <EntitySet Name="PhotoAlbums" EntityType="ShamrockModel.Store.PhotoAlbums" store:Type="Tables" />
+          <EntitySet Name="PhotoAlbums_Locale" EntityType="ShamrockModel.Store.PhotoAlbums_Locale" store:Type="Tables" />
+          <EntitySet Name="TableReservations" EntityType="ShamrockModel.Store.TableReservations" store:Type="Tables" />
+          <AssociationSet Name="DishCategories_DishCategories_Locale" Association="ShamrockModel.Store.DishCategories_DishCategories_Locale">
+            <End Role="DishCategories" EntitySet="DishCategories" />
+            <End Role="DishCategories_Locale" EntitySet="DishCategories_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="DishCategories_Dishes" Association="ShamrockModel.Store.DishCategories_Dishes">
+            <End Role="DishCategories" EntitySet="DishCategories" />
+            <End Role="Dishes" EntitySet="Dishes" />
+          </AssociationSet>
+          <AssociationSet Name="Dishes_Dishes_Locale" Association="ShamrockModel.Store.Dishes_Dishes_Locale">
+            <End Role="Dishes" EntitySet="Dishes" />
+            <End Role="Dishes_Locale" EntitySet="Dishes_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="Events_Events_Locale" Association="ShamrockModel.Store.Events_Events_Locale">
+            <End Role="Events" EntitySet="Events" />
+            <End Role="Events_Locale" EntitySet="Events_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="EventTypes_Events" Association="ShamrockModel.Store.EventTypes_Events">
+            <End Role="EventTypes" EntitySet="EventTypes" />
+            <End Role="Events" EntitySet="Events" />
+          </AssociationSet>
+          <AssociationSet Name="ImageLinkCategory_ImageLinks" Association="ShamrockModel.Store.ImageLinkCategory_ImageLinks">
+            <End Role="ImageLinkCategories" EntitySet="ImageLinkCategories" />
+            <End Role="ImageLinks" EntitySet="ImageLinks" />
+          </AssociationSet>
+          <AssociationSet Name="PhotoAlbums_PhotoAlbums_Locale" Association="ShamrockModel.Store.PhotoAlbums_PhotoAlbums_Locale">
+            <End Role="PhotoAlbums" EntitySet="PhotoAlbums" />
+            <End Role="PhotoAlbums_Locale" EntitySet="PhotoAlbums_Locale" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Author" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Body" Type="nvarchar" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DishCategories">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Order" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DishCategories_Locale">
+          <Key>
+            <PropertyRef Name="DishCategoryId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Name="DishCategoryId" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Dishes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DishCategoryId" Type="int" Nullable="false" />
+          <Property Name="Cost" Type="nvarchar" Nullable="false" MaxLength="16" />
+        </EntityType>
+        <EntityType Name="Dishes_Locale">
+          <Key>
+            <PropertyRef Name="DishId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Name="DishId" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Portion" Type="nvarchar" Nullable="false" MaxLength="16" />
+          <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Events">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="EventTypeId" Type="int" Nullable="false" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="Events_Locale">
+          <Key>
+            <PropertyRef Name="EventId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Name="EventId" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" />
+          <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="EventTypes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ImageLinkCategories">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="ImageLinks">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImagePath" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="Link" Type="nvarchar" MaxLength="400" />
+          <Property Name="AlternateText" Type="nvarchar" MaxLength="400" />
+          <Property Name="ImageLinkCategoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhotoAlbums">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IsSystem" Type="bit" Nullable="false" />
+          <Property Name="Order" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhotoAlbums_Locale">
+          <Key>
+            <PropertyRef Name="PhotoAlbumId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Name="PhotoAlbumId" Type="int" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="TableReservations">
+          <Key>
+            <PropertyRef Name="Date" />
+            <PropertyRef Name="TableId" />
+          </Key>
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="TableId" Type="int" Nullable="false" />
+          <Property Name="Time" Type="nchar" Nullable="false" MaxLength="5" />
+          <Property Name="PhoneNumber" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Wishes" Type="nvarchar" MaxLength="400" />
+          <Property Name="StaffNotified" Type="bit" />
+        </EntityType>
+        <Association Name="DishCategories_DishCategories_Locale">
+          <End Role="DishCategories" Type="ShamrockModel.Store.DishCategories" Multiplicity="1" />
+          <End Role="DishCategories_Locale" Type="ShamrockModel.Store.DishCategories_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DishCategories">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DishCategories_Locale">
+              <PropertyRef Name="DishCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DishCategories_Dishes">
+          <End Role="DishCategories" Type="ShamrockModel.Store.DishCategories" Multiplicity="1" />
+          <End Role="Dishes" Type="ShamrockModel.Store.Dishes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DishCategories">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dishes">
+              <PropertyRef Name="DishCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Dishes_Dishes_Locale">
+          <End Role="Dishes" Type="ShamrockModel.Store.Dishes" Multiplicity="1" />
+          <End Role="Dishes_Locale" Type="ShamrockModel.Store.Dishes_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dishes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dishes_Locale">
+              <PropertyRef Name="DishId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Events_Events_Locale">
+          <End Role="Events" Type="ShamrockModel.Store.Events" Multiplicity="1" />
+          <End Role="Events_Locale" Type="ShamrockModel.Store.Events_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Events">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Events_Locale">
+              <PropertyRef Name="EventId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EventTypes_Events">
+          <End Role="EventTypes" Type="ShamrockModel.Store.EventTypes" Multiplicity="1" />
+          <End Role="Events" Type="ShamrockModel.Store.Events" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventTypes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Events">
+              <PropertyRef Name="EventTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ImageLinkCategory_ImageLinks">
+          <End Role="ImageLinkCategories" Type="ShamrockModel.Store.ImageLinkCategories" Multiplicity="1" />
+          <End Role="ImageLinks" Type="ShamrockModel.Store.ImageLinks" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImageLinkCategories">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageLinks">
+              <PropertyRef Name="ImageLinkCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PhotoAlbums_PhotoAlbums_Locale">
+          <End Role="PhotoAlbums" Type="ShamrockModel.Store.PhotoAlbums" Multiplicity="1" />
+          <End Role="PhotoAlbums_Locale" Type="ShamrockModel.Store.PhotoAlbums_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhotoAlbums">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PhotoAlbums_Locale">
+              <PropertyRef Name="PhotoAlbumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ShamrockModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ShamrockEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Comments" EntityType="ShamrockModel.Comment" />
+          <EntitySet Name="DishCategories" EntityType="ShamrockModel.DishCategory" />
+          <EntitySet Name="DishCategory_Locale" EntityType="ShamrockModel.DishCategory_Locale" />
+          <EntitySet Name="Dishes" EntityType="ShamrockModel.Dish" />
+          <EntitySet Name="Dish_Locale" EntityType="ShamrockModel.Dish_Locale" />
+          <EntitySet Name="Events" EntityType="ShamrockModel.Event" />
+          <EntitySet Name="Event_Locale" EntityType="ShamrockModel.Event_Locale" />
+          <EntitySet Name="EventTypes" EntityType="ShamrockModel.EventType" />
+          <EntitySet Name="PhotoAlbums" EntityType="ShamrockModel.PhotoAlbum" />
+          <EntitySet Name="PhotoAlbum_Locale" EntityType="ShamrockModel.PhotoAlbum_Locale" />
+          <AssociationSet Name="DishCategories_DishCategories_Locale" Association="ShamrockModel.DishCategories_DishCategories_Locale">
+            <End Role="DishCategory" EntitySet="DishCategories" />
+            <End Role="DishCategories_Locale" EntitySet="DishCategory_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="DishCategories_Dishes" Association="ShamrockModel.DishCategories_Dishes">
+            <End Role="DishCategory" EntitySet="DishCategories" />
+            <End Role="Dish" EntitySet="Dishes" />
+          </AssociationSet>
+          <AssociationSet Name="Dishes_Dishes_Locale" Association="ShamrockModel.Dishes_Dishes_Locale">
+            <End Role="Dish" EntitySet="Dishes" />
+            <End Role="Dishes_Locale" EntitySet="Dish_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="Events_Events_Locale" Association="ShamrockModel.Events_Events_Locale">
+            <End Role="Event" EntitySet="Events" />
+            <End Role="Events_Locale" EntitySet="Event_Locale" />
+          </AssociationSet>
+          <AssociationSet Name="EventTypes_Events" Association="ShamrockModel.EventTypes_Events">
+            <End Role="EventType" EntitySet="EventTypes" />
+            <End Role="Event" EntitySet="Events" />
+          </AssociationSet>
+          <AssociationSet Name="PhotoAlbums_PhotoAlbums_Locale" Association="ShamrockModel.PhotoAlbums_PhotoAlbums_Locale">
+            <End Role="PhotoAlbum" EntitySet="PhotoAlbums" />
+            <End Role="PhotoAlbums_Locale" EntitySet="PhotoAlbum_Locale" />
+          </AssociationSet>
+          <EntitySet Name="TableReservations" EntityType="ShamrockModel.TableReservation" />
+          <EntitySet Name="ImageLinkCategories" EntityType="ShamrockModel.ImageLinkCategory" />
+          <EntitySet Name="ImageLinks" EntityType="ShamrockModel.ImageLink" />
+          <AssociationSet Name="ImageLinkCategory_ImageLinks" Association="ShamrockModel.ImageLinkCategory_ImageLinks">
+            <End Role="ImageLinkCategory" EntitySet="ImageLinkCategories" />
+            <End Role="ImageLink" EntitySet="ImageLinks" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Author" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Body" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DishCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" FixedLength="false" Unicode="true" MaxLength="32" />
+          <Property Type="Int32" Name="Order" Nullable="false" />
+          <NavigationProperty Name="DishCategories_Locale" Relationship="ShamrockModel.DishCategories_DishCategories_Locale" FromRole="DishCategory" ToRole="DishCategories_Locale" />
+          <NavigationProperty Name="Dishes" Relationship="ShamrockModel.DishCategories_Dishes" FromRole="DishCategory" ToRole="Dish" />
+        </EntityType>
+        <EntityType Name="DishCategory_Locale">
+          <Key>
+            <PropertyRef Name="DishCategoryId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Type="Int32" Name="DishCategoryId" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="false" FixedLength="false" Unicode="true" MaxLength="32" />
+          <Property Type="String" Name="Culture" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="DishCategory" Relationship="ShamrockModel.DishCategories_DishCategories_Locale" FromRole="DishCategories_Locale" ToRole="DishCategory" />
+        </EntityType>
+        <EntityType Name="Dish">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="DishCategoryId" Nullable="false" />
+          <Property Type="String" Name="Cost" Nullable="false" />
+          <NavigationProperty Name="DishCategory" Relationship="ShamrockModel.DishCategories_Dishes" FromRole="Dish" ToRole="DishCategory" />
+          <NavigationProperty Name="Dishes_Locale" Relationship="ShamrockModel.Dishes_Dishes_Locale" FromRole="Dish" ToRole="Dishes_Locale" />
+        </EntityType>
+        <EntityType Name="Dish_Locale">
+          <Key>
+            <PropertyRef Name="DishId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Type="Int32" Name="DishId" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Dish" Relationship="ShamrockModel.Dishes_Dishes_Locale" FromRole="Dishes_Locale" ToRole="Dish" />
+          <Property Type="String" Name="Portion" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Culture" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="Int32" Name="EventTypeId" Nullable="false" />
+          <Property Type="String" Name="ImagePath" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Events_Locale" Relationship="ShamrockModel.Events_Events_Locale" FromRole="Event" ToRole="Events_Locale" />
+          <NavigationProperty Name="EventType" Relationship="ShamrockModel.EventTypes_Events" FromRole="Event" ToRole="EventType" />
+        </EntityType>
+        <EntityType Name="Event_Locale">
+          <Key>
+            <PropertyRef Name="EventId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Type="Int32" Name="EventId" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Culture" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Event" Relationship="ShamrockModel.Events_Events_Locale" FromRole="Events_Locale" ToRole="Event" />
+        </EntityType>
+        <EntityType Name="EventType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ImagePath" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Events" Relationship="ShamrockModel.EventTypes_Events" FromRole="EventType" ToRole="Event" />
+        </EntityType>
+        <EntityType Name="PhotoAlbum">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="PhotoAlbums_Locale" Relationship="ShamrockModel.PhotoAlbums_PhotoAlbums_Locale" FromRole="PhotoAlbum" ToRole="PhotoAlbums_Locale" />
+          <Property Type="Boolean" Name="IsSystem" Nullable="false" />
+          <Property Type="Int32" Name="Order" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhotoAlbum_Locale">
+          <Key>
+            <PropertyRef Name="PhotoAlbumId" />
+            <PropertyRef Name="Culture" />
+          </Key>
+          <Property Type="Int32" Name="PhotoAlbumId" Nullable="false" />
+          <Property Type="String" Name="DisplayName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Culture" Nullable="false" MaxLength="2" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="PhotoAlbum" Relationship="ShamrockModel.PhotoAlbums_PhotoAlbums_Locale" FromRole="PhotoAlbums_Locale" ToRole="PhotoAlbum" />
+        </EntityType>
+        <Association Name="DishCategories_DishCategories_Locale">
+          <End Type="ShamrockModel.DishCategory" Role="DishCategory" Multiplicity="1" />
+          <End Type="ShamrockModel.DishCategory_Locale" Role="DishCategories_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DishCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DishCategories_Locale">
+              <PropertyRef Name="DishCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DishCategories_Dishes">
+          <End Type="ShamrockModel.DishCategory" Role="DishCategory" Multiplicity="1" />
+          <End Type="ShamrockModel.Dish" Role="Dish" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DishCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dish">
+              <PropertyRef Name="DishCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Dishes_Dishes_Locale">
+          <End Type="ShamrockModel.Dish" Role="Dish" Multiplicity="1" />
+          <End Type="ShamrockModel.Dish_Locale" Role="Dishes_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Dish">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dishes_Locale">
+              <PropertyRef Name="DishId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Events_Events_Locale">
+          <End Type="ShamrockModel.Event" Role="Event" Multiplicity="1" />
+          <End Type="ShamrockModel.Event_Locale" Role="Events_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Event">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Events_Locale">
+              <PropertyRef Name="EventId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EventTypes_Events">
+          <End Type="ShamrockModel.EventType" Role="EventType" Multiplicity="1" />
+          <End Type="ShamrockModel.Event" Role="Event" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EventType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Event">
+              <PropertyRef Name="EventTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PhotoAlbums_PhotoAlbums_Locale">
+          <End Type="ShamrockModel.PhotoAlbum" Role="PhotoAlbum" Multiplicity="1" />
+          <End Type="ShamrockModel.PhotoAlbum_Locale" Role="PhotoAlbums_Locale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhotoAlbum">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PhotoAlbums_Locale">
+              <PropertyRef Name="PhotoAlbumId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TableReservation">
+          <Key>
+            <PropertyRef Name="Date" />
+            <PropertyRef Name="TableId" />
+          </Key>
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="Int32" Name="TableId" Nullable="false" />
+          <Property Type="String" Name="Time" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Wishes" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="StaffNotified" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ImageLinkCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ImageLinks" Relationship="ShamrockModel.ImageLinkCategory_ImageLinks" FromRole="ImageLinkCategory" ToRole="ImageLink" />
+        </EntityType>
+        <EntityType Name="ImageLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ImagePath" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Link" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="AlternateText" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ImageLinkCategoryId" Nullable="false" />
+          <NavigationProperty Name="ImageLinkCategory" Relationship="ShamrockModel.ImageLinkCategory_ImageLinks" FromRole="ImageLink" ToRole="ImageLinkCategory" />
+        </EntityType>
+        <Association Name="ImageLinkCategory_ImageLinks">
+          <End Type="ShamrockModel.ImageLinkCategory" Role="ImageLinkCategory" Multiplicity="1" />
+          <End Type="ShamrockModel.ImageLink" Role="ImageLink" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ImageLinkCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ImageLink">
+              <PropertyRef Name="ImageLinkCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ShamrockModelStoreContainer" CdmEntityContainer="ShamrockEntities">
+          <EntitySetMapping Name="Comments">
+            <EntityTypeMapping TypeName="ShamrockModel.Comment">
+              <MappingFragment StoreEntitySet="Comments">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DishCategories">
+            <EntityTypeMapping TypeName="ShamrockModel.DishCategory">
+              <MappingFragment StoreEntitySet="DishCategories">
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DishCategory_Locale">
+            <EntityTypeMapping TypeName="ShamrockModel.DishCategory_Locale">
+              <MappingFragment StoreEntitySet="DishCategories_Locale">
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="DishCategoryId" ColumnName="DishCategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dishes">
+            <EntityTypeMapping TypeName="ShamrockModel.Dish">
+              <MappingFragment StoreEntitySet="Dishes">
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="DishCategoryId" ColumnName="DishCategoryId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dish_Locale">
+            <EntityTypeMapping TypeName="ShamrockModel.Dish_Locale">
+              <MappingFragment StoreEntitySet="Dishes_Locale">
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+                <ScalarProperty Name="Portion" ColumnName="Portion" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="DishId" ColumnName="DishId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="ShamrockModel.Event">
+              <MappingFragment StoreEntitySet="Events">
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="EventTypeId" ColumnName="EventTypeId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Event_Locale">
+            <EntityTypeMapping TypeName="ShamrockModel.Event_Locale">
+              <MappingFragment StoreEntitySet="Events_Locale">
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EventTypes">
+            <EntityTypeMapping TypeName="ShamrockModel.EventType">
+              <MappingFragment StoreEntitySet="EventTypes">
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhotoAlbums">
+            <EntityTypeMapping TypeName="ShamrockModel.PhotoAlbum">
+              <MappingFragment StoreEntitySet="PhotoAlbums">
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="IsSystem" ColumnName="IsSystem" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhotoAlbum_Locale">
+            <EntityTypeMapping TypeName="ShamrockModel.PhotoAlbum_Locale">
+              <MappingFragment StoreEntitySet="PhotoAlbums_Locale">
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="PhotoAlbumId" ColumnName="PhotoAlbumId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TableReservations">
+            <EntityTypeMapping TypeName="ShamrockModel.TableReservation">
+              <MappingFragment StoreEntitySet="TableReservations">
+                <ScalarProperty Name="StaffNotified" ColumnName="StaffNotified" />
+                <ScalarProperty Name="Wishes" ColumnName="Wishes" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="TableId" ColumnName="TableId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImageLinkCategories">
+            <EntityTypeMapping TypeName="ShamrockModel.ImageLinkCategory">
+              <MappingFragment StoreEntitySet="ImageLinkCategories">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImageLinks">
+            <EntityTypeMapping TypeName="ShamrockModel.ImageLink">
+              <MappingFragment StoreEntitySet="ImageLinks">
+                <ScalarProperty Name="ImageLinkCategoryId" ColumnName="ImageLinkCategoryId" />
+                <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ShamrockModel" ZoomLevel="97">
+        <EntityTypeShape EntityType="ShamrockModel.Comment" Width="1.5" PointX="3" PointY="0.5" Height="1.9802864583333317" />
+        <EntityTypeShape EntityType="ShamrockModel.DishCategory" Width="1.5" PointX="0.5" PointY="3" Height="1.9802864583333326" />
+        <EntityTypeShape EntityType="ShamrockModel.DishCategory_Locale" Width="1.5" PointX="0.5" PointY="6" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="ShamrockModel.Dish" Width="1.5" PointX="3" PointY="3" Height="1.9802864583333326" />
+        <EntityTypeShape EntityType="ShamrockModel.Dish_Locale" Width="1.5" PointX="3" PointY="6" Height="1.9802864583333335" />
+        <EntityTypeShape EntityType="ShamrockModel.Event" Width="1.5" PointX="7.75" PointY="3" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="ShamrockModel.Event_Locale" Width="1.5" PointX="7.75" PointY="6" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="ShamrockModel.EventType" Width="1.5" PointX="7.75" PointY="0.5" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="ShamrockModel.PhotoAlbum" Width="1.5" PointX="5.375" PointY="3" Height="1.7879850260416665" />
+        <EntityTypeShape EntityType="ShamrockModel.PhotoAlbum_Locale" Width="1.5" PointX="5.5" PointY="6" Height="1.7879850260416665" />
+        <AssociationConnector Association="ShamrockModel.DishCategories_DishCategories_Locale" >
+          <ConnectorPoint PointX="1.25" PointY="4.9802864583333326" />
+          <ConnectorPoint PointX="1.25" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="ShamrockModel.DishCategories_Dishes" >
+          <ConnectorPoint PointX="2" PointY="3.9901432291666663" />
+          <ConnectorPoint PointX="3" PointY="3.9901432291666663" />
+        </AssociationConnector>
+        <AssociationConnector Association="ShamrockModel.Dishes_Dishes_Locale" >
+          <ConnectorPoint PointX="3.75" PointY="4.9802864583333326" />
+          <ConnectorPoint PointX="3.75" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="ShamrockModel.Events_Events_Locale" >
+          <ConnectorPoint PointX="8.5" PointY="5.172587890624996" />
+          <ConnectorPoint PointX="8.5" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="ShamrockModel.EventTypes_Events" >
+          <ConnectorPoint PointX="8.5" PointY="2.2879850260416674" />
+          <ConnectorPoint PointX="8.5" PointY="3" />
+        </AssociationConnector>
+        <AssociationConnector Association="ShamrockModel.PhotoAlbums_PhotoAlbums_Locale" >
+          <ConnectorPoint PointX="6.1875" PointY="4.7879850260416665" />
+          <ConnectorPoint PointX="6.1875" PointY="6" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ShamrockModel.TableReservation" Width="1.5" PointX="0.5" PointY="0.5" Height="2.3648893229166665" />
+        <EntityTypeShape EntityType="ShamrockModel.ImageLinkCategory" Width="1.5" PointX="10.25" PointY="0.5" Height="1.4033821614583317" />
+        <EntityTypeShape EntityType="ShamrockModel.ImageLink" Width="1.5" PointX="10.25" PointY="3" Height="1.9802864583333388" />
+        <AssociationConnector Association="ShamrockModel.ImageLinkCategory_ImageLinks" >
+          <ConnectorPoint PointX="11" PointY="2.09568359375" />
+          <ConnectorPoint PointX="11" PointY="3" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

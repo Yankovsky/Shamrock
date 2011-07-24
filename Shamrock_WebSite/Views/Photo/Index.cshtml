@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+
+@foreach (var item in Model)
+{
+    <div class="photo">
+        @Html.ActionImage(Url.Thumb(item), "photo", Url.Content(item), new { }, new { rel = "lyteshow[" + ViewBag.PhotoAlbumId + "]", title = ViewBag.PhotoAlbumName })
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="buttons">
+                @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "Photo",
+                                  new { fileName = item, photoAlbumId = ViewBag.PhotoAlbumId },
+                                  new { @class = "deleteButton" })
+            </div>
+        }
+    </div>
+}

@@ -1,0 +1,11 @@
+﻿@model Shamrock_WebSite.Models.TableReservation
+
+@{
+    ViewBag.Title = Resource.ReservationTitle + " " + Model.TableId;
+}
+
+@Html.Partial("_ReserveForm")
+
+<div>
+    @Html.ActionLink(Resource.BackToReservation, "Index", null, new { @class = "smallButton" })
+</div>

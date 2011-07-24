@@ -1,0 +1,44 @@
+﻿@model Shamrock_WebSite.Models.ImageLink
+
+@using (Html.BeginForm(null, "ImageLink", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <fieldset>
+        <legend>@Resource.ImageLink</legend>
+
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(model => model.ImagePath)
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AlternateText)
+            @Html.ValidationMessageFor(model => model.AlternateText)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AlternateText)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Link)
+            @Html.ValidationMessageFor(model => model.Link)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Link)
+        </div>        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageLinkCategory)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.ImageLinkCategoryId, (IEnumerable<SelectListItem>)ViewBag.ImageLinkCategories)
+        </div>
+
+        @if (Model != null && !String.IsNullOrWhiteSpace(Model.ImagePath))
+        {
+            @Html.Image(Model.ImagePath, Model.AlternateText, null, true) 
+        }
+        @Html.Partial("_ImageUpload")
+
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton"  />
+        </p>
+    </fieldset>
+}

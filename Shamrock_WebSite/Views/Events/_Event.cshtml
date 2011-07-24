@@ -1,0 +1,26 @@
+﻿@model Shamrock_WebSite.Models.Event
+
+<a href="@Url.Action("Details", "Events", new { id = Model.Id, returnUrl = Request.RawUrl })">
+    <div class="event">
+        <div id="leftPart">
+            <div class="date">
+                @Html.Partial("_EventDate", Model.Date)
+            </div>
+            <div class="type">
+                @Html.Image(Model.EventType.ImagePath, Model.EventType.Name)
+            </div>
+        </div>
+        <div class="rightPart">
+            <h2>@Model.Locale.DisplayName</h2>
+            <div class="description">
+                @if (!String.IsNullOrWhiteSpace(Model.ImagePath))
+                { 
+                    @Html.Image(Model.ImagePath, Model.Locale.DisplayName, null, true)
+                }            
+                <pre>
+                    @Html.Truncate(Model.Locale.Description, "...", 200, 50)
+                </pre>
+            </div>
+        </div>
+    </div>
+</a>

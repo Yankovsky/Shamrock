@@ -1,0 +1,1 @@
+copy all files from this folder to server's bin, if provider doesn't support SQL CE 4.0

@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A29598F-F86E-44FE-B88C-8893D68AC08F}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shamrock_WebSite</RootNamespace>
+    <AssemblyName>Shamrock_WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Sql CE 4.0\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\Dependencies\Sql CE 4.0\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resource.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.ru.resx</DependentUpon>
+    </Compile>
+    <Content Include="Content\Images\ImageLink\Banner.jpg" />
+    <Content Include="Content\Images\ImageLink\Facebook.png" />
+    <Content Include="Content\Images\Logo3.png" />
+    <Content Include="Content\Images\Logo4.png" />
+    <Content Include="Content\Images\MenuDivider.png" />
+    <Content Include="Content\Images\Mitki\Mitki2.png" />
+    <Content Include="Content\Images\Mitki\Mitki3.png" />
+    <Content Include="Content\Images\Mitki\Mitki4.png" />
+    <Content Include="Content\Images\WoodTexture.jpg" />
+    <Content Include="Content\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_gloss-wave_25_453326_500x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_highlight-soft_20_201913_1x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_highlight-soft_20_619226_1x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-bg_inset-soft_10_201913_1x100.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_9bcc60_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_add978_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_e3ddc9_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_f1fd86_256x240.png" />
+    <Content Include="Content\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui\jquery-ui-1.8.14.custom.css" />
+    <Content Include="Content\Reservation.css" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
+    <Compile Include="Controllers\DishCategoryController.cs" />
+    <Compile Include="Controllers\DishController.cs" />
+    <Compile Include="Controllers\ImageLinkController.cs" />
+    <Compile Include="Controllers\PhotoAlbumController.cs" />
+    <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
+    <Compile Include="Helpers\PagingHelper.cs" />
+    <Compile Include="Helpers\ScriptHelper.cs" />
+    <Compile Include="Helpers\TruncateHelper.cs" />
+    <Compile Include="Helpers\UrlExtensions.cs" />
+    <Compile Include="Infrastructure\DirectoryExtensions.cs" />
+    <Compile Include="Models\DishCategory_Locale.cs" />
+    <Compile Include="Models\Dish_Locale.cs" />
+    <Compile Include="Models\ImageLink.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Dish.cs" />
+    <Compile Include="Models\DishCategory.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Event_Locale.cs" />
+    <Compile Include="Models\PhotoAlbum.cs" />
+    <Compile Include="Models\PhotoAlbum_Locale.cs" />
+    <Compile Include="Models\ShamrockModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShamrockModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\CollectionExtensions.cs" />
+    <Compile Include="Models\TableReservation.cs" />
+    <Compile Include="Services\ConfigWrapper.cs" />
+    <Compile Include="Services\ImagesManager.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastructure\PathExtensions.cs" />
+    <Compile Include="Services\SMSService.cs" />
+    <Compile Include="SupportedCulture.cs" />
+    <Compile Include="UnityControllerFactory.cs" />
+    <Content Include="Scripts\jquery-ui-1.8.14.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.8.14.custom.min.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="yandex_67e4cdbca11cef81.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Shamrock.sdf" />
+    <Content Include="App_Data\Config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\Images\AlternativeTitle.png" />
+    <Content Include="Content\Images\ImageLink\Boat.png" />
+    <Content Include="Content\Images\Bookmark.png" />
+    <Content Include="Content\Images\BookmarkHighlight.png" />
+    <Content Include="Content\Images\Date.png" />
+    <Content Include="Content\Images\Delete.png" />
+    <Content Include="Content\Images\Design.png" />
+    <Content Include="Content\Images\Designer.png" />
+    <Content Include="Content\Images\Divider.png" />
+    <Content Include="Content\Images\Edit.png" />
+    <Content Include="Content\Images\Eng.png" />
+    <Content Include="Content\Images\EventType\sport.png" />
+    <Content Include="Content\Images\EventType\music.png" />
+    <Content Include="Content\Images\FooterBackground.png" />
+    <Content Include="Content\Images\HeaderBackground.png" />
+    <Content Include="Content\Images\Home.png" />
+    <Content Include="Content\Images\HorizontalDivider.png" />
+    <Content Include="Content\Images\ImageLink\SpecialOffer.png" />
+    <Content Include="Content\Images\ImageLink\vkontakte.png" />
+    <Content Include="Content\Images\login.png" />
+    <Content Include="Content\Images\Logo.png" />
+    <Content Include="Content\Images\MainBackground.png" />
+    <Content Include="Content\Images\MenuBackground.png" />
+    <Content Include="Content\Images\MenuReservationBackground.png" />
+    <Content Include="Content\Images\Mitki\Mitki1.png" />
+    <Content Include="Content\Images\MoveDown.png" />
+    <Content Include="Content\Images\MoveLeft.png" />
+    <Content Include="Content\Images\MoveRight.png" />
+    <Content Include="Content\Images\MoveUp.png" />
+    <Content Include="Content\Images\Pointer.png" />
+    <Content Include="Content\Images\PreFooter.png" />
+    <Content Include="Content\Images\PreFooterBackground.png" />
+    <Content Include="Content\Images\Reservation.png" />
+    <Content Include="Content\Images\ReservationBackground.png" />
+    <Content Include="Content\Images\Rus.png" />
+    <Content Include="Content\Images\Sport.png" />
+    <Content Include="Content\Images\TableSprite1.png" />
+    <Content Include="Content\Images\TableSprite10.png" />
+    <Content Include="Content\Images\TableSprite2.png" />
+    <Content Include="Content\Images\TableSprite3.png" />
+    <Content Include="Content\Images\TableSprite4.png" />
+    <Content Include="Content\Images\TableSprite5.png" />
+    <Content Include="Content\Images\TableSprite6.png" />
+    <Content Include="Content\Images\TableSprite7.png" />
+    <Content Include="Content\Images\TableSprite8.png" />
+    <Content Include="Content\Images\TableSprite9.png" />
+    <Content Include="Content\Images\Texture.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="google9959b1fe52391372.html" />
+    <Content Include="lytebox\images\blank.gif" />
+    <Content Include="lytebox\images\close_blue.png" />
+    <Content Include="lytebox\images\close_gold.png" />
+    <Content Include="lytebox\images\close_green.png" />
+    <Content Include="lytebox\images\close_grey.png" />
+    <Content Include="lytebox\images\close_red.png" />
+    <Content Include="lytebox\images\loading.gif" />
+    <Content Include="lytebox\images\next_blue.gif" />
+    <Content Include="lytebox\images\next_gold.gif" />
+    <Content Include="lytebox\images\next_green.gif" />
+    <Content Include="lytebox\images\next_grey.gif" />
+    <Content Include="lytebox\images\next_red.gif" />
+    <Content Include="lytebox\images\pause_blue.png" />
+    <Content Include="lytebox\images\pause_gold.png" />
+    <Content Include="lytebox\images\pause_green.png" />
+    <Content Include="lytebox\images\pause_grey.png" />
+    <Content Include="lytebox\images\pause_red.png" />
+    <Content Include="lytebox\images\play_blue.png" />
+    <Content Include="lytebox\images\play_gold.png" />
+    <Content Include="lytebox\images\play_green.png" />
+    <Content Include="lytebox\images\play_grey.png" />
+    <Content Include="lytebox\images\play_red.png" />
+    <Content Include="lytebox\images\prev_blue.gif" />
+    <Content Include="lytebox\images\prev_gold.gif" />
+    <Content Include="lytebox\images\prev_green.gif" />
+    <Content Include="lytebox\images\prev_grey.gif" />
+    <Content Include="lytebox\images\prev_red.gif" />
+    <Content Include="lytebox\lytebox.css" />
+    <Content Include="lytebox\lytebox.js" />
+    <Content Include="README.jQuery.vsdoc.txt" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\jquery-1.6.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.1.js" />
+    <Content Include="Scripts\jquery-1.6.1.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker-ru.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\Shamrock.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOn.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ImageUpload.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Images\Event\" />
+    <Folder Include="Content\Images\PhotoAlbum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Resource.ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.ru.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\ShamrockModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShamrockModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DishCategory\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Contacts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\About\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Comments\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Comments\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\_Event.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\_EventsList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\Archive.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\_EventForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Comments\_CommentForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Comments\_Comment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\_EventDate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\EditorTemplates\Text.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DishCategory\_DishCategoryForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DishCategory\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DishCategory\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dish\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dish\_DishForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dish\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Events\_Event_Locales.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dish\_Dish_Locales.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DishCategory\_DishCategory_Locales.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\_PhotoAlbumForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhotoAlbum\_PhotoAlbum_Locales.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dish\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Photo\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Reservation\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Reservation\_ReserveForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ImagesUpload.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Shamrock.eot" />
+    <None Include="Content\Shamrock.ttf" />
+    <Content Include="Views\Shared\_ShortContacts.cshtml" />
+    <Content Include="Views\About\Map.cshtml" />
+    <Content Include="Views\Reservation\Reserve.cshtml" />
+    <Content Include="Views\Shared\_Picture.cshtml" />
+    <Content Include="Views\Events\_Archive.cshtml" />
+    <Content Include="Views\Events\_FutureEvents.cshtml" />
+    <Content Include="Views\DishCategory\_DishesByDishCategory.cshtml" />
+    <Content Include="Views\ImageLink\GetImageLinksBlock.cshtml" />
+    <Content Include="Views\ImageLink\Create.cshtml" />
+    <Content Include="Views\ImageLink\_ImageLinkForm.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45056</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+xcopy /s /y "$(SolutionDir)packages\SqlServerCompact.4.0.8482.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+xcopy /s /y "$(SolutionDir)packages\SqlServerCompact.4.0.8482.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

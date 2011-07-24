@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Alternate" xml:space="preserve">
+    <value>Alternate text</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="BackToAboutPage" xml:space="preserve">
+    <value>Back to about page</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Back to list</value>
+  </data>
+  <data name="ChangesSaved" xml:space="preserve">
+    <value>Changes saved</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="CommentBody" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CommentsTitle" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="ConfigTitle" xml:space="preserve">
+    <value>Config</value>
+  </data>
+  <data name="ContactUsTitle" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="CreateDishCategoryTitle" xml:space="preserve">
+    <value>Create dish category</value>
+  </data>
+  <data name="CreateDishTitle" xml:space="preserve">
+    <value>Create dish</value>
+  </data>
+  <data name="CreateEventTitle" xml:space="preserve">
+    <value>Create event</value>
+  </data>
+  <data name="CreatePhotoAlbumTitle" xml:space="preserve">
+    <value>Create photo album</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Dish" xml:space="preserve">
+    <value>Dish</value>
+  </data>
+  <data name="DishCategory" xml:space="preserve">
+    <value>Dish category</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EditDishCategoryTitle" xml:space="preserve">
+    <value>Edit dish category</value>
+  </data>
+  <data name="EditDishTitle" xml:space="preserve">
+    <value>Edit dish</value>
+  </data>
+  <data name="EditEventTitle" xml:space="preserve">
+    <value>Edit event</value>
+  </data>
+  <data name="EditPhotoAlbum" xml:space="preserve">
+    <value>Edit photo album</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="EventsArchiveTitle" xml:space="preserve">
+    <value>Events archive</value>
+  </data>
+  <data name="EventsTitle" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="EventType" xml:space="preserve">
+    <value>Event type</value>
+  </data>
+  <data name="FutureEvents" xml:space="preserve">
+    <value>Future events</value>
+  </data>
+  <data name="GalleryTitle" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="InvalidCost" xml:space="preserve">
+    <value>The price must be an integer greater than zero (eg 300)</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value>Invalid e-mail</value>
+  </data>
+  <data name="InvalidLogin" xml:space="preserve">
+    <value>The user name or password provided is incorrect.</value>
+  </data>
+  <data name="InvalidUrl" xml:space="preserve">
+    <value>Invalid url</value>
+  </data>
+  <data name="ItemCannotBeMoved" xml:space="preserve">
+    <value>Item can not be moved</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="LogOn" xml:space="preserve">
+    <value>Log on</value>
+  </data>
+  <data name="MaxLength" xml:space="preserve">
+    <value>The {0} field must not be longer than {1} symbols</value>
+  </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MinLength" xml:space="preserve">
+    <value>The {0} field must be longer than {1} symbols</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>URL name</value>
+  </data>
+  <data name="OurCoordinates" xml:space="preserve">
+    <value>Dekabristov Street, 27, St. Petersburg</value>
+  </data>
+  <data name="OurCoordinatesText" xml:space="preserve">
+    <value>We are located at</value>
+  </data>
+  <data name="OurPartners" xml:space="preserve">
+    <value>Наши партнёры</value>
+  </data>
+  <data name="OurPhoneNumberText" xml:space="preserve">
+    <value>Our phone number</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PhotoAlbum" xml:space="preserve">
+    <value>Photo album</value>
+  </data>
+  <data name="Portion" xml:space="preserve">
+    <value>Portion</value>
+  </data>
+  <data name="RecordNotFound" xml:space="preserve">
+    <value>Record not found</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>The {0} field is required</value>
+  </data>
+  <data name="ReservationTitle" xml:space="preserve">
+    <value>Reserve table</value>
+  </data>
+  <data name="Rur" xml:space="preserve">
+    <value>rur.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Shamrock</value>
+  </data>
+  <data name="Social" xml:space="preserve">
+    <value>Social networks</value>
+  </data>
+  <data name="SystemAlbumCannotBeDeleted" xml:space="preserve">
+    <value>This album cannot be deleted</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Unique" xml:space="preserve">
+    <value>Name must be unique</value>
+  </data>
+  <data name="UploadImage" xml:space="preserve">
+    <value>Upload image</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name</value>
+  </data>
+  <data name="ViewLargerMap" xml:space="preserve">
+    <value>View larger map</value>
+  </data>
+  <data name="Wishes" xml:space="preserve">
+    <value>Wishes</value>
+  </data>
+  <data name="BackToReservation" xml:space="preserve">
+    <value>Back to map</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>The {0} field must be of length {1}</value>
+  </data>
+  <data name="InvalidTime" xml:space="preserve">
+    <value>Invalid time</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Sorry, an error occurred while processing your request</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="AlreadyReserved" xml:space="preserve">
+    <value>Sorry, but this table is already reserved</value>
+  </data>
+  <data name="UploadImages" xml:space="preserve">
+    <value>Upload images</value>
+  </data>
+  <data name="BarWorkingArea" xml:space="preserve">
+    <value>bar (working area)</value>
+  </data>
+  <data name="Darts" xml:space="preserve">
+    <value>- Darts</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="FreeTable" xml:space="preserve">
+    <value>- Free table</value>
+  </data>
+  <data name="NonsmokingRoom" xml:space="preserve">
+    <value>Nonsmoking area</value>
+  </data>
+  <data name="ReservedTable" xml:space="preserve">
+    <value>- Reserved table</value>
+  </data>
+  <data name="SmokingRoom" xml:space="preserve">
+    <value>Smoking area</value>
+  </data>
+  <data name="TV" xml:space="preserve">
+    <value>- TV</value>
+  </data>
+  <data name="MapTitle" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="About" xml:space="preserve">
+    <value>The Shamrock Bar is an institution in St. Petersburg born in early 90's next to the Mariinsky (Kirov) Theater just as the new Russia was taking to its feet.
+	
+	Theater Square holds a special place in the entertainment and cultural life of St. Petersburg centered around the Mariinsky and the State Conservatory with the Shamrock smack in between.
+	
+	As the only truly Irish pub in St. Petersburg, the Shamrock like the Mariinsky sticks to its traditional roots. We have created a unique Irish atmosphere in St. Petersburg centered on live Irish music, Irish spirits and beers, and of course the best choice of live Irish, British, European, and even North American sporting events. The Shamrock has gone one extra as its new kitchen has earned a reputation as one of the better places to dine in the city.
+	
+	Simple but delicious steaks and pastas. The ubiquitous Irish stew and Shepphard's Pie. The best Chicken Kiev and lasagna in town.
+	
+	The place before or after the Ballet. Have a drink rubbing with the performers you just saw on stage. Stop by for a of Guinness or Murphy's after an unforgettable stroll along the Moika Canal from Nevsky Prospect. Or just sit around for hours sipping your Jameson and listening to the best Irish Music in town. Maybe if the craic is particularly good you may even take part in a wee sing along about a lass named Peggy.
+	
+	Come see for yourself why everyone says that the only real Irish Pub in St. Petersburg is The Shamrock.</value>
+  </data>
+  <data name="CommentSuccess" xml:space="preserve">
+    <value>{0}, thank you for the feedback!</value>
+  </data>
+  <data name="ReserveSuccess" xml:space="preserve">
+    <value>{0}, thank you! The table {1} was successfully reserved!</value>
+  </data>
+  <data name="LogOff" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="NoImagesChosen" xml:space="preserve">
+    <value>No images chosen</value>
+  </data>
+  <data name="ImageLink" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="CreateImageLinkTitle" xml:space="preserve">
+    <value>Create banner</value>
+  </data>
+  <data name="EditeImageLinkTitle" xml:space="preserve">
+    <value>Edit banner</value>
+  </data>
+  <data name="ImageLinkCategory" xml:space="preserve">
+    <value>Banner category</value>
+  </data>
+</root>

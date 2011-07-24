@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Comment>
+
+@{    
+    ViewBag.Title = Resource.CommentsTitle;
+}
+
+<div class="pagingList">
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_Comment", item)
+    }
+    <div class="paginator">
+        @Html.PageLinks((int)ViewBag.CurrentPage, (int)ViewBag.TotalPages, x => Url.Action("Index", new { page = x }))
+    </div>
+</div>

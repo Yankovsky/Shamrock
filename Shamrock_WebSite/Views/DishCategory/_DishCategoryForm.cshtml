@@ -1,0 +1,22 @@
+﻿@model Shamrock_WebSite.Models.DishCategory
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>@Resource.DishCategory</legend>
+
+        @Html.ValidationSummary(false)
+
+        @Html.HiddenFor(model => model.Order)
+
+        @Html.Partial("_DishCategory_Locales", new List<Shamrock_WebSite.Models.DishCategory_Locale>(Model.DishCategories_Locale))
+
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

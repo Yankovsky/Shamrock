@@ -1,0 +1,15 @@
+﻿@{               
+    ViewBag.Title = Resource.HomeTitle;
+}
+
+@section LeftPanel
+{
+    @Html.Partial("_Picture")
+    @Html.Action("GetImageLinksBlock", "ImageLink", new { imageLinksBlockName = "LeftBannersBlock" })
+}
+
+@Html.Action("ClosestEvent", "Events")
+
+@Html.Action("GetImageLinksBlock", "ImageLink", new { imageLinksBlockName = "RightBannersBlock" })
+
+@Html.ActionLink(Resource.CreateImageLinkTitle, "Create", "ImageLink", null, new { @class = "mediumButton" })

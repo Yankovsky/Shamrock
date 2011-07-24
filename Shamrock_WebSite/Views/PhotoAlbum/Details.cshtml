@@ -1,0 +1,47 @@
+﻿@model Shamrock_WebSite.Models.PhotoAlbum
+
+@{
+    ViewBag.Title = Model.Locale.DisplayName;
+}
+
+@section Css
+{
+    <link href="@Url.Content("~/lytebox/lytebox.css")" rel="stylesheet" type="text/css" media="screen" />
+}
+
+@section Scripts
+{
+    <script type="text/javascript" language="javascript" src="/lytebox/lytebox.js"></script>
+}
+
+<div id="photoAlbumHeader">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="buttons">
+            @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "PhotoAlbum", new { id = Model.Id }, new { @class = "editButton" })
+            @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "PhotoAlbum", new { id = Model.Id }, new { @class = "deleteButton" })
+        </div>
+    }
+    <h2>@Model.Locale.DisplayName</h2>
+</div>
+
+<div id="photos">
+    @Html.Action("Index", "Photo", new { photoAlbumId = Model.Id })
+</div>
+
+<div class="clear"></div>
+
+@if (User.Identity.IsAuthenticated)
+{
+    using (Html.BeginForm("Upload", "Photo", new { photoAlbumId = Model.Id }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.Partial("_ImagesUpload")
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton"  />
+        </p>
+    }
+}
+
+<div class="center">
+    @Html.ActionLink(Resource.BackToList, "Index", "PhotoAlbum", null, new { @class = "smallButton margin-top" })
+</div>

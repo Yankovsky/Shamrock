@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.Event>
+
+@{
+    ViewBag.Title = Resource.EventsArchiveTitle;
+}
+
+@Html.Partial("_Archive")
+
+<div class="center">
+    @Html.ActionLink(Resource.FutureEvents, "Index", null, new { @class = "mediumButton" })
+</div>

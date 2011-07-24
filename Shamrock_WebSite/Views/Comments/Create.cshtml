@@ -1,0 +1,9 @@
+﻿@model Shamrock_WebSite.Models.Comment
+
+@{
+    ViewBag.Title = Resource.ContactUsTitle;
+}
+
+@Html.Partial("_CommentForm")
+
+@Html.ActionLink(Resource.BackToAboutPage, "Index", "About", null, new { @class = "smallButton" })

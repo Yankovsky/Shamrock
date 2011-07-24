@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.DishCategory>
+           
+@{
+    ViewBag.Title = Resource.MenuTitle;
+}
+
+@section LeftPanel
+{
+    <div id="dishCategoriesList">
+        @foreach (var category in Model)
+        {
+            <div class="dishCategory">
+                @if (category.Name.Equals(ViewBag.DishCategoryName, StringComparison.InvariantCultureIgnoreCase))
+                { 
+                    @Html.Image("~/Content/Images/Pointer.png", "pointer", new { @class = "pointer" })
+                    <div class="name">
+                        @Html.ActionLink(category.Locale.DisplayName.ToUpper(), "Index", new { dishCategoryName = category.Name }, new { @class = "selected" })
+                    </div>
+                }
+                else
+                {
+                    <div class="name">
+                        @Html.ActionLink(category.Locale.DisplayName.ToUpper(), "Index", new { dishCategoryName = category.Name })
+                    </div>
+                }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="buttons">
+                        @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "DishCategory", new { id = category.Id }, null, new { @class = "editButton" })
+                        @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "DishCategory", new { id = category.Id }, null, new { @class = "deleteButton" })
+                        <div class="moveButtons">
+                            @Html.ActionImage("~/Content/Images/MoveUp.png", "moveUp", "MoveUp", "DishCategory", new { id = category.Id }, null, new { @class = "moveButton" })
+                            @Html.ActionImage("~/Content/Images/MoveDown.png", "moveDown", "MoveDown", "DishCategory", new { id = category.Id }, null, new { @class = "moveButton" })
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="center">
+            @Html.ActionLink(Resource.CreateDishCategoryTitle, "Create", "DishCategory", null, new { @class = "mediumButton" })
+        </div>
+    }
+}
+
+@Html.Partial("_DishesByDishCategory", (string)ViewBag.DishCategoryName)

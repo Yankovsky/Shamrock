@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Shamrock_WebSite.App_GlobalResources {
-    using System;
-    
-    
+namespace Shamrock_WebSite.App_GlobalResources
+{
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -272,6 +272,15 @@ namespace Shamrock_WebSite.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create staff member.
+        /// </summary>
+        public static string CreateStaffMember {
+            get {
+                return ResourceManager.GetString("CreateStaffMember", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to - Darts.
         /// </summary>
         public static string Darts {
@@ -367,6 +376,15 @@ namespace Shamrock_WebSite.App_GlobalResources {
         public static string EditPhotoAlbum {
             get {
                 return ResourceManager.GetString("EditPhotoAlbum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit staff member.
+        /// </summary>
+        public static string EditStaffMember {
+            get {
+                return ResourceManager.GetString("EditStaffMember", resourceCulture);
             }
         }
         
@@ -506,6 +524,15 @@ namespace Shamrock_WebSite.App_GlobalResources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Banners.
+        /// </summary>
+        public static string ImageLinksTitle {
+            get {
+                return ResourceManager.GetString("ImageLinksTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The price must be an integer greater than zero (eg 300).
         /// </summary>
         public static string InvalidCost {
@@ -529,6 +556,15 @@ namespace Shamrock_WebSite.App_GlobalResources {
         public static string InvalidLogin {
             get {
                 return ResourceManager.GetString("InvalidLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid phone number. Right one 79991234567.
+        /// </summary>
+        public static string InvalidPhone {
+            get {
+                return ResourceManager.GetString("InvalidPhone", resourceCulture);
             }
         }
         
@@ -817,6 +853,24 @@ namespace Shamrock_WebSite.App_GlobalResources {
         public static string Social {
             get {
                 return ResourceManager.GetString("Social", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staff member.
+        /// </summary>
+        public static string StaffMember {
+            get {
+                return ResourceManager.GetString("StaffMember", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staff members.
+        /// </summary>
+        public static string StaffMembersTitle {
+            get {
+                return ResourceManager.GetString("StaffMembersTitle", resourceCulture);
             }
         }
         

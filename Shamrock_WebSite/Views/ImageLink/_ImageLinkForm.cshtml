@@ -29,11 +29,12 @@
         </div>
         <div class="editor-field">
             @Html.DropDownListFor(model => model.ImageLinkCategoryId, (IEnumerable<SelectListItem>)ViewBag.ImageLinkCategories)
+            @Html.LabelFor(model => model.ImageLinkCategory)
         </div>
 
         @if (Model != null && !String.IsNullOrWhiteSpace(Model.ImagePath))
         {
-            @Html.Image(Model.ImagePath, Model.AlternateText, null, true) 
+            @Html.Image(Model.ImagePath, Model.AlternateText) 
         }
         @Html.Partial("_ImageUpload")
 
@@ -42,3 +43,7 @@
         </p>
     </fieldset>
 }
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

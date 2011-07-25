@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Shamrock_WebSite.Models;
-using Shamrock_WebSite.App_GlobalResources;
-using Shamrock_WebSite.Services;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Data;
+using System.IO;
+using System.Linq;
+using System.Web.Mvc;
+using Shamrock_WebSite.App_GlobalResources;
 using Shamrock_WebSite.Infrastructure;
+using Shamrock_WebSite.Models;
 
 namespace Shamrock_WebSite.Controllers
 {

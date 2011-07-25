@@ -228,7 +228,7 @@ body
 	font-weight: lighter;
 	margin-bottom: 10px;
 }
-#socialBlock img
+#socialNetworkingBlock img
 {
     max-width: 140px;
     max-height: 30px;
@@ -402,6 +402,15 @@ body
 }
 /* BANNERS
 ----------------------------------------------------------*/
+#imageLinksList th, td
+{
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+#imageLinksList img
+{
+    max-width: 200px;
+}
 #leftBannersBlock
 {
     text-align: center;
@@ -414,14 +423,14 @@ body
 {
 	max-width: 344px;
 }
-#leftBannersBlock a
-{
-	max-width: 640px;
-}
 #leftBannersBlock img
 {
 	max-width: 314px;
 	margin: 15px 0 0 0;
+}
+#rightBannersBlock a
+{
+	max-width: 640px;
 }
 #rightBannersBlock img
 {
@@ -706,7 +715,8 @@ body
     float: left;
 }
 #photoAlbums .photoAlbumWrapper
-{    
+{
+    background-color: #002414;
     padding: 5px 4px 5px 4px;
     border: 1px solid #00180c;
 	border-radius: 10px;

@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Linq;
-using System.Web.Mvc;
-using Shamrock_WebSite.Models;
-using System.Web;
-using System.Web.Helpers;
-using Shamrock_WebSite.Services;
-using Shamrock_WebSite.App_GlobalResources;
-using Shamrock_WebSite.Helpers;
 using System.Data;
 using System.IO;
+using System.Linq;
+using System.Web;
+using System.Web.Helpers;
+using System.Web.Mvc;
+using Shamrock_WebSite.App_GlobalResources;
+using Shamrock_WebSite.Models;
+using Shamrock_WebSite.Services;
 
 namespace Shamrock_WebSite.Controllers
 {
@@ -20,7 +19,7 @@ namespace Shamrock_WebSite.Controllers
         [ChildActionOnly]
         public ActionResult GetImageLinksBlock(string imageLinksBlockName)
         {
-            if (String.IsNullOrWhiteSpace(imageLinksBlockName))
+            if (!String.IsNullOrWhiteSpace(imageLinksBlockName))
             {
                 var imageLinksBlock = db.ImageLinkCategories.SingleOrDefault(ilc => ilc.Name == imageLinksBlockName);
                 if (imageLinksBlock != null)
@@ -30,6 +29,13 @@ namespace Shamrock_WebSite.Controllers
                 }
             }
             return null;            
+        }
+
+        [Authorize]
+        public ActionResult Index()
+        {
+            var imageLinks = db.ImageLinks;
+            return View(imageLinks);
         }
 
         [Authorize]
@@ -45,19 +51,20 @@ namespace Shamrock_WebSite.Controllers
         [HttpPost]
         public ActionResult Create(ImageLink imageLink, HttpPostedFileBase image)
         {
-            if (image != null)
+            if (ModelState.IsValid)
             {
-                var webImage = new WebImage(image.InputStream) { FileName = image.FileName };
-                imageLink.ImagePath = ImagesManager.UploadImage(webImage, "ImageLink");
-
-                if (ModelState.IsValid)
+                if (image != null)
                 {
+                    var webImage = new WebImage(image.InputStream) { FileName = image.FileName };
+                    var imageLinkCategory = db.ImageLinkCategories.Single(ilc => ilc.Id == imageLink.ImageLinkCategoryId);
+                    imageLink.ImagePath = ImagesManager.UploadImage(webImage.Resize(imageLinkCategory.MaxWidth, imageLinkCategory.MaxHeight, true, true), "ImageLink");
+
                     db.ImageLinks.AddObject(imageLink);
 
                     db.SaveChanges();
 
                     TempData["Result"] = Resource.ChangesSaved;
-                    return RedirectToAction("Index", "Home", null);
+                    return RedirectToAction("Index");
                 }
             }
             return Create();
@@ -71,7 +78,7 @@ namespace Shamrock_WebSite.Controllers
             if (_imageLink == null)
             {
                 TempData["Result"] = Resource.RecordNotFound;
-                return Redirect(Url.Home());
+                return RedirectToAction("Index");
             }
             else
             {
@@ -93,16 +100,16 @@ namespace Shamrock_WebSite.Controllers
                     if (!String.IsNullOrWhiteSpace(imageLink.ImagePath))
                         ImagesManager.DeleteImage(Path.GetFileName(imageLink.ImagePath), "ImageLink");
                     var webImage = new WebImage(image.InputStream) { FileName = image.FileName };
-                    imageLink.ImagePath = ImagesManager.UploadImage(webImage, "ImageLink");
-
-                    db.ImageLinks.Attach(imageLink);
-                    db.ObjectStateManager.ChangeObjectState(imageLink, EntityState.Modified);
-
-                    db.SaveChanges();
-
-                    TempData["Result"] = Resource.ChangesSaved;
-                    return Redirect(Url.Home());
+                    var imageLinkCategory = db.ImageLinkCategories.Single(ilc => ilc.Id == imageLink.ImageLinkCategoryId);
+                    imageLink.ImagePath = ImagesManager.UploadImage(webImage.Resize(imageLinkCategory.MaxWidth, imageLinkCategory.MaxHeight, true, true), "ImageLink");
                 }
+                db.ImageLinks.Attach(imageLink);
+                db.ObjectStateManager.ChangeObjectState(imageLink, EntityState.Modified);
+
+                db.SaveChanges();
+
+                TempData["Result"] = Resource.ChangesSaved;
+                return RedirectToAction("Index");
             }
             return Edit(imageLink.Id);
         }
@@ -128,7 +135,7 @@ namespace Shamrock_WebSite.Controllers
                 TempData["Result"] = Resource.ChangesSaved;
             }
 
-            return Redirect(Url.Home());
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

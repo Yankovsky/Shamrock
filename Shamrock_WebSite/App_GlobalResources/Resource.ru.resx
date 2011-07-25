@@ -407,4 +407,22 @@
   <data name="ImageLinkCategory" xml:space="preserve">
     <value>Тип баннера</value>
   </data>
+  <data name="ImageLinksTitle" xml:space="preserve">
+    <value>Баннеры</value>
+  </data>
+  <data name="CreateStaffMember" xml:space="preserve">
+    <value>Добавить сотрудника</value>
+  </data>
+  <data name="EditStaffMember" xml:space="preserve">
+    <value>Редактировать сотрудника</value>
+  </data>
+  <data name="StaffMember" xml:space="preserve">
+    <value>Сотрудник</value>
+  </data>
+  <data name="StaffMembersTitle" xml:space="preserve">
+    <value>Сотрудники</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Неправильный номер. Надо так 79991234567</value>
+  </data>
 </root>

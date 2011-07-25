@@ -72,13 +72,16 @@
                             </div>
                         }
                     </div>
+                    <div class="clear center">
+                        @RenderSection("PreFooter", false)
+                    </div>  
                     <div id="preFooter">
                     </div>
                     <div id="footer">
                         <div id="footerContent">
                             <div id="leftFooterBlock">
                                 <p id="socialHeader">@Resource.Social.ToUpper()</p>
-                                @Html.Action("GetImageLinksBlock", "ImageLink", new { ImageLinksBlockName = "SocialNetworkingBlock" })
+                                @Html.Action("GetImageLinksBlock", "ImageLink", new { ImageLinksBlockName = "socialNetworkingBlock" })
                                 <div id="credits">
                                     <p>© "Shamrock" 2011</p>
                                     @Html.Partial("_ShortContacts")

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.ImageLink>
+
+@{
+    ViewBag.Title = Resource.ImageLinksTitle;
+}
+
+<table id="imageLinksList">
+    <tr>
+        <th>
+            @Resource.Image
+        </th>
+        <th>
+            @Resource.Link
+        </th>
+        <th>
+            @Resource.Alternate
+        </th>
+        <th>
+            @Resource.ImageLinkCategory
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.Image(item.ImagePath, item.AlternateText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Link)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternateText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageLinkCategory.Name)
+            </td>
+            <td width=60>
+                <div class="buttons">
+                    @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "ImageLink", new { id = item.Id }, new { @class = "editButton" })
+                    @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "ImageLink", new { id = item.Id }, new { @class = "deleteButton" })
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="center">
+    @Html.ActionLink(Resource.CreateImageLinkTitle, "Create", null, new { @class = "mediumButton" })
+</div>

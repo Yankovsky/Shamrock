@@ -1,0 +1,34 @@
+﻿@model Shamrock_WebSite.Models.StaffMember
+
+@using (Html.BeginForm(null, "StaffMember", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <fieldset>
+        <legend>@Resource.StaffMember</legend>
+
+        @Html.ValidationSummary(true)
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Phone)
+            @Html.ValidationMessageFor(model => model.Phone)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Phone)
+        </div>
+        
+        <p>
+            <input type="submit" value="@Resource.Save" class="bigButton"  />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink(Resource.BackToList, "Index", null, new { @class = "smallButton" })
+</div>

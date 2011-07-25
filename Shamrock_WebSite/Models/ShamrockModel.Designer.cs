@@ -8,12 +8,12 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
 #region EDM Relationship Metadata
@@ -283,6 +283,22 @@ namespace Shamrock_WebSite.Models
             }
         }
         private ObjectSet<ImageLink> _ImageLinks;
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        public ObjectSet<StaffMember> StaffMembers
+        {
+            get
+            {
+                if ((_StaffMembers == null))
+                {
+                    _StaffMembers = base.CreateObjectSet<StaffMember>("StaffMembers");
+                }
+                return _StaffMembers;
+            }
+        }
+        private ObjectSet<StaffMember> _StaffMembers;
 
         #endregion
         #region AddTo Methods
@@ -389,6 +405,14 @@ namespace Shamrock_WebSite.Models
         public void AddToImageLinks(ImageLink imageLink)
         {
             base.AddObject("ImageLinks", imageLink);
+        }
+    
+        /// <summary>
+        /// Deprecated Method for adding a new object to the StaffMembers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
+        /// </summary>
+        public void AddToStaffMembers(StaffMember staffMember)
+        {
+            base.AddObject("StaffMembers", staffMember);
         }
 
         #endregion
@@ -1723,13 +1747,11 @@ namespace Shamrock_WebSite.Models
         /// Create a new ImageLink object.
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
-        /// <param name="imagePath">Initial value of the ImagePath property.</param>
         /// <param name="imageLinkCategoryId">Initial value of the ImageLinkCategoryId property.</param>
-        public static ImageLink CreateImageLink(global::System.Int32 id, global::System.String imagePath, global::System.Int32 imageLinkCategoryId)
+        public static ImageLink CreateImageLink(global::System.Int32 id, global::System.Int32 imageLinkCategoryId)
         {
             ImageLink imageLink = new ImageLink();
             imageLink.Id = id;
-            imageLink.ImagePath = imagePath;
             imageLink.ImageLinkCategoryId = imageLinkCategoryId;
             return imageLink;
         }
@@ -1767,7 +1789,7 @@ namespace Shamrock_WebSite.Models
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
         [DataMemberAttribute()]
         public global::System.String ImagePath
         {
@@ -1779,7 +1801,7 @@ namespace Shamrock_WebSite.Models
             {
                 OnImagePathChanging(value);
                 ReportPropertyChanging("ImagePath");
-                _ImagePath = StructuralObject.SetValidValue(value, false);
+                _ImagePath = StructuralObject.SetValidValue(value, true);
                 ReportPropertyChanged("ImagePath");
                 OnImagePathChanged();
             }
@@ -1920,11 +1942,15 @@ namespace Shamrock_WebSite.Models
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
         /// <param name="name">Initial value of the Name property.</param>
-        public static ImageLinkCategory CreateImageLinkCategory(global::System.Int32 id, global::System.String name)
+        /// <param name="maxWidth">Initial value of the MaxWidth property.</param>
+        /// <param name="maxHeight">Initial value of the MaxHeight property.</param>
+        public static ImageLinkCategory CreateImageLinkCategory(global::System.Int32 id, global::System.String name, global::System.Int32 maxWidth, global::System.Int32 maxHeight)
         {
             ImageLinkCategory imageLinkCategory = new ImageLinkCategory();
             imageLinkCategory.Id = id;
             imageLinkCategory.Name = name;
+            imageLinkCategory.MaxWidth = maxWidth;
+            imageLinkCategory.MaxHeight = maxHeight;
             return imageLinkCategory;
         }
 
@@ -1981,6 +2007,54 @@ namespace Shamrock_WebSite.Models
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 MaxWidth
+        {
+            get
+            {
+                return _MaxWidth;
+            }
+            set
+            {
+                OnMaxWidthChanging(value);
+                ReportPropertyChanging("MaxWidth");
+                _MaxWidth = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MaxWidth");
+                OnMaxWidthChanged();
+            }
+        }
+        private global::System.Int32 _MaxWidth;
+        partial void OnMaxWidthChanging(global::System.Int32 value);
+        partial void OnMaxWidthChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 MaxHeight
+        {
+            get
+            {
+                return _MaxHeight;
+            }
+            set
+            {
+                OnMaxHeightChanging(value);
+                ReportPropertyChanging("MaxHeight");
+                _MaxHeight = StructuralObject.SetValidValue(value);
+                ReportPropertyChanged("MaxHeight");
+                OnMaxHeightChanged();
+            }
+        }
+        private global::System.Int32 _MaxHeight;
+        partial void OnMaxHeightChanging(global::System.Int32 value);
+        partial void OnMaxHeightChanged();
 
         #endregion
     
@@ -2292,6 +2366,113 @@ namespace Shamrock_WebSite.Models
         }
 
         #endregion
+    }
+    
+    /// <summary>
+    /// No Metadata Documentation available.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="ShamrockModel", Name="StaffMember")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class StaffMember : EntityObject
+    {
+        #region Factory Method
+    
+        /// <summary>
+        /// Create a new StaffMember object.
+        /// </summary>
+        /// <param name="id">Initial value of the Id property.</param>
+        /// <param name="name">Initial value of the Name property.</param>
+        /// <param name="phone">Initial value of the Phone property.</param>
+        public static StaffMember CreateStaffMember(global::System.Int32 id, global::System.String name, global::System.String phone)
+        {
+            StaffMember staffMember = new StaffMember();
+            staffMember.Id = id;
+            staffMember.Name = name;
+            staffMember.Phone = phone;
+            return staffMember;
+        }
+
+        #endregion
+        #region Primitive Properties
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = StructuralObject.SetValidValue(value);
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String Name
+        {
+            get
+            {
+                return _Name;
+            }
+            set
+            {
+                OnNameChanging(value);
+                ReportPropertyChanging("Name");
+                _Name = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Name");
+                OnNameChanged();
+            }
+        }
+        private global::System.String _Name;
+        partial void OnNameChanging(global::System.String value);
+        partial void OnNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String Phone
+        {
+            get
+            {
+                return _Phone;
+            }
+            set
+            {
+                OnPhoneChanging(value);
+                ReportPropertyChanging("Phone");
+                _Phone = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("Phone");
+                OnPhoneChanged();
+            }
+        }
+        private global::System.String _Phone;
+        partial void OnPhoneChanging(global::System.String value);
+        partial void OnPhoneChanged();
+
+        #endregion
+    
     }
     
     /// <summary>

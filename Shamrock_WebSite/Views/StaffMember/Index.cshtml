@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Shamrock_WebSite.Models.StaffMember>
+
+@{
+    ViewBag.Title = Resource.StaffMembersTitle;
+}
+
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td width=60>
+                <div class="buttons">
+                    @Html.ActionImage("~/Content/Images/Edit.png", "edit", "Edit", "StaffMember", new { id = item.Id }, new { @class = "editButton" })
+                    @Html.ActionImage("~/Content/Images/Delete.png", "delete", "Delete", "StaffMember", new { id = item.Id }, new { @class = "deleteButton" })
+                </div>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="center">
+    @Html.ActionLink(Resource.CreateStaffMember, "Create", null, new { @class = "mediumButton" })
+</div>

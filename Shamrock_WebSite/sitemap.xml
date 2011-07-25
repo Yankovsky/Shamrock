@@ -7,189 +7,1158 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.shamrock.spb.ru/</loc>
+  <loc>http://shamrock.spb.ru/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu</loc>
+  <loc>http://shamrock.spb.ru/Menu</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Events</loc>
+  <loc>http://shamrock.spb.ru/Events</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Gallery</loc>
+  <loc>http://shamrock.spb.ru/Gallery</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/About/Map</loc>
+  <loc>http://shamrock.spb.ru/About/Map</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/About</loc>
+  <loc>http://shamrock.spb.ru/About</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Comments/Create</loc>
+  <loc>http://shamrock.spb.ru/Events/Details/58?returnUrl=%2F</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Account/LogOn?returnUrl=%2F</loc>
+  <loc>http://shamrock.spb.ru/Comments/Create</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Beer</loc>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2F</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Bottled-beer</loc>
+  <loc>http://shamrock.spb.ru/Menu/Beer</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/VODKA</loc>
+  <loc>http://shamrock.spb.ru/Menu/Bottled-beer</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Tequila</loc>
+  <loc>http://shamrock.spb.ru/Menu/VODKA</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Whiskeys</loc>
+  <loc>http://shamrock.spb.ru/Menu/Tequila</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Cognacs</loc>
+  <loc>http://shamrock.spb.ru/Menu/Whiskeys</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/GIN</loc>
+  <loc>http://shamrock.spb.ru/Menu/Cognacs</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/RUM</loc>
+  <loc>http://shamrock.spb.ru/Menu/GIN</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Liquerurs</loc>
+  <loc>http://shamrock.spb.ru/Menu/RUM</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Absinth</loc>
+  <loc>http://shamrock.spb.ru/Menu/Liquerurs</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/MARTINI</loc>
+  <loc>http://shamrock.spb.ru/Menu/Absinth</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Champagne</loc>
+  <loc>http://shamrock.spb.ru/Menu/MARTINI</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Beer?page=1</loc>
+  <loc>http://shamrock.spb.ru/Menu/Champagne</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Beer?page=2</loc>
+  <loc>http://shamrock.spb.ru/Menu/WINE</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Menu/Beer?page=3</loc>
+  <loc>http://shamrock.spb.ru/Menu/HOT-DRINKS</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu</loc>
+  <loc>http://shamrock.spb.ru/Menu/Salads</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/2011/7/12</loc>
+  <loc>http://shamrock.spb.ru/Menu/Soups</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=1&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Menu/Steaks</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=2&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Menu/Beer?page=1</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=3&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Menu/Beer?page=2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=4&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Menu/Beer?page=3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=5&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=6&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=1&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=7&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=2&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=8&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=3&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=9&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=4&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=10&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=5&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=11&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=6&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=12&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=7&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=13&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=8&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=14&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=9&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=15&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=10&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=16&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=11&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=17&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=12&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=18&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=13&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=19&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=14&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=20&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=15&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=21&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=16&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=22&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=17&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=23&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=18&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=24&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=19&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=25&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=20&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=26&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=21&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=27&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=22&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=28&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=23&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=29&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=24&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=30&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=25&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=31&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=26&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=32&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=27&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=33&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=28&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=34&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=29&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=35&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=30&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://www.shamrock.spb.ru/Reservation/Reserve?tableId=36&amp;year=2011&amp;month=7&amp;day=11&amp;returnUrl=%2FReservation</loc>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=31&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=32&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=33&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=34&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=35&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=36&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/2011/7/26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/58?returnUrl=%2FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/60?returnUrl=%2FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/62?returnUrl=%2FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Archive</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/PhotoAlbum/Details/16</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/PhotoAlbum/Details/17</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/PhotoAlbum/Details/18</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/PhotoAlbum/Details/19</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/PhotoAlbum/Details/20</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FGallery</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FAbout%2FMap</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FAbout</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FEvents%2FDetails%2F58%3FreturnUrl%3D%252F</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FComments%2FCreate</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FAccount%2FLogOn%3FreturnUrl%3D%252F</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FBeer</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FBottled-beer</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FVODKA</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FTequila</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Menu/Whiskeys?page=1</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Menu/Whiskeys?page=2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Menu/Whiskeys?page=3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FWhiskeys</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FCognacs</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FGIN</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FRUM</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Menu/Liquerurs?page=1</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Menu/Liquerurs?page=2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FLiquerurs</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FAbsinth</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FMARTINI</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FChampagne</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FWINE</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FHOT-DRINKS</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FSalads</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FSoups</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FSteaks</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FBeer%3Fpage%3D1</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FBeer%3Fpage%3D2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FMenu%2FBeer%3Fpage%3D3</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FAccount%2FLogOn%3FreturnUrl%3D%252FMenu</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=1&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D1%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=2&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D2%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=3&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D3%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=4&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D4%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=5&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D5%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=6&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D6%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=7&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D7%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=8&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D8%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=9&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D9%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=10&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D10%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=11&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D11%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=12&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D12%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=13&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D13%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=14&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D14%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=15&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D15%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=16&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D16%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=17&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D17%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=18&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D18%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=19&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D19%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=20&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D20%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=21&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D21%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=22&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D22%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=23&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D23%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=24&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D24%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=25&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D25%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=26&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D26%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=27&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D27%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=28&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D28%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=29&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D29%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=30&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D30%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=31&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D31%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=32&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D32%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=33&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D33%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=34&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D34%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=35&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D35%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=36&amp;year=2011&amp;month=7&amp;day=25&amp;returnUrl=%2FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2FReserve%3FtableId%3D36%26year%3D2011%26month%3D7%26day%3D25%26returnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=1&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=2&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=3&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=4&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=5&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=6&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=7&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=8&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=9&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=10&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=11&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=12&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=13&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=14&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=15&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=16&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=17&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=18&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=19&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=20&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=21&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=22&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=23&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=24&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=25&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=26&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=27&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=28&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=29&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=30&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=31&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=32&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=33&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=34&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=35&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/Reserve?tableId=36&amp;year=2011&amp;month=7&amp;day=26&amp;returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/2011/7/25</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Reservation/2011/7/27</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FReservation%2F2011%2F7%2F26</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FAccount%2FLogOn%3FreturnUrl%3D%252FReservation</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FEvents%2FDetails%2F58%3FreturnUrl%3D%252FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FEvents%2FDetails%2F60%3FreturnUrl%3D%252FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Account/LogOn?returnUrl=%2FEvents%2FDetails%2F62%3FreturnUrl%3D%252FEvents</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/59?returnUrl=%2FEvents%2FArchive</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/61?returnUrl=%2FEvents%2FArchive</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Details/56?returnUrl=%2FEvents%2FArchive</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Archive?page=1</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://shamrock.spb.ru/Events/Archive?page=2</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.51</priority>
 </url>
 </urlset>

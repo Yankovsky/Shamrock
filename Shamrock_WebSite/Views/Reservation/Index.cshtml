@@ -83,4 +83,11 @@
                                 new { year = tommorow.Year, month = tommorow.Month, day = tommorow.Day },
                                 null, new { @class = "moveButton" })
     </div>
+
+    @if (User.Identity.IsAuthenticated)
+    { 
+        <div class="center">
+            @Html.ActionLink(Resource.StaffMembersTitle, "Index", "StaffMember", null, new { @class = "mediumButton" })
+        </div>
+    }
 </div>

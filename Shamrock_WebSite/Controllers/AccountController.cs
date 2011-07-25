@@ -2,7 +2,6 @@
 using System.Web.Mvc;
 using System.Web.Security;
 using Shamrock_WebSite.App_GlobalResources;
-using System.Web;
 
 namespace Shamrock_WebSite.Controllers
 {

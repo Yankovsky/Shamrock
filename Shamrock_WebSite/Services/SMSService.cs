@@ -1,32 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Net;
-using System.Xml;
-using System.IO;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Shamrock_WebSite.Services
 {
     public static class SMSService
     {
-        public static bool TryToLogin()
-        {
-            var requestUriString = String.Format("http://api.sms24×7.ru/?method=login&email={0}&password={1}");
-            return true;
-        }
-
         public static bool TrySendSMS(string text, string phoneNumber)
         {
-            var requestUriString = String.Format("http://api.sms24x7.ru/?method=push_msg&text={0}&phone={1}&sender_name=Shamrock", text, phoneNumber);
-            var request = WebRequest.Create(requestUriString);
-            var response = request.GetResponse();
-            using (var stream = new StreamReader(response.GetResponseStream()))
-            {
-                var xml = new XmlDocument();
-                xml.Load(stream);
-                return true;
+            try
+            {            
+                var requestUriString = String.Format("http://smspilot.ru/api.php?send={0}&to={1}&from=Shamrock&apikey=Y2HMU0OM24ICN21WRQH10466585W3NMS4D48OFFD8RWPQ74HU6787NVS61YRX692", text, phoneNumber);
+                var request = WebRequest.Create(requestUriString);
+
+                var response = request.GetResponse();
+                byte[] buffer = new byte[512];
+                var responseStream = response.GetResponseStream();
+                var responseBody = "";
+                int count = 0;
+                do
+                {
+                    count = responseStream.Read(buffer, 0, buffer.Length);
+                    if (count != 0)
+                        responseBody += Encoding.ASCII.GetString(buffer, 0, count);
+                }
+                while (count > 0);
+                if (Regex.IsMatch(responseBody, "SUCCESS=SMS SENT"))
+                    return true;
             }
+            catch
+            {
+                return false;
+            }
+            return false;
         }
     }
 }

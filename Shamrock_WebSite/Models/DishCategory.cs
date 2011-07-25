@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using Shamrock_WebSite.App_GlobalResources;
+﻿using System.Linq;
 
 namespace Shamrock_WebSite.Models
 {

@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Web;
+using System.Web.Caching;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Data.Entity;
-using Shamrock_WebSite.Models;
 using Microsoft.Practices.Unity;
-using System.Globalization;
-using System.Threading;
-using System.Web.Caching;
+using Shamrock_WebSite.Models;
 using Shamrock_WebSite.Services;
-using System.IO;
 
 namespace Shamrock_WebSite
 {
@@ -107,27 +104,27 @@ namespace Shamrock_WebSite
             }
             if (name == _sendNotifications)
             {
-                using (var db = new ShamrockEntities())
+                var hour = DateTime.Now.Hour;
+                if (hour > 9 || hour < 1)
                 {
-                    var unnotifiedTableReservations = db.TableReservations.Where(tr => tr.StaffNotified == false);
-
-                    var staff = ConfigWrapper.Config.Root.Element("staff").Elements("staffMember");
-                    foreach (var tr in unnotifiedTableReservations)
+                    using (var db = new ShamrockEntities())
                     {
-                        var success = true;
-                        foreach (var staffMember in staff)
+                        var unnotifiedTableReservations = db.TableReservations.Where(tr => tr.StaffNotified == false);
+                        var staff = db.StaffMembers;
+                        foreach (var tr in unnotifiedTableReservations)
                         {
-                            var staffMemberName = staffMember.Attribute("name").Value;
-                            var staffMemberPhoneNumber = staffMember.Attribute("phoneNumber").Value;
-
-                            var text = String.Format("{0}, {1} забронировал столик №{2} на {3} {4}. Пожелания: {5}, номер: {6}",
-                                staffMemberName, tr.Name, tr.TableId, tr.Date.ToShortDateString(), tr.Time, tr.Wishes, tr.PhoneNumber);
-                            success &= SMSService.TrySendSMS(text, staffMemberPhoneNumber);
-                        }
-                        if (success)
-                        {
-                            tr.StaffNotified = true;
-                            db.SaveChanges();
+                            var success = true;
+                            foreach (var staffMember in staff)
+                            {
+                                var text = String.Format("{0}, {1} забронировал столик №{2} на {3} {4}. Пожелания: {5}, номер: {6}",
+                                    staffMember.Name, tr.Name, tr.TableId, tr.Date.ToShortDateString(), tr.Time, tr.Wishes.Substring(0, 20) + "...", tr.PhoneNumber);
+                                success &= SMSService.TrySendSMS(text, staffMember.Phone);
+                            }
+                            if (success)
+                            {
+                                tr.StaffNotified = true;
+                                db.SaveChanges();
+                            }
                         }
                     }
                 }

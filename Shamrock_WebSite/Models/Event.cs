@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using Shamrock_WebSite.App_GlobalResources;
 
 namespace Shamrock_WebSite.Models

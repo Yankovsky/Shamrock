@@ -40,6 +40,7 @@ namespace Shamrock_WebSite.Controllers
                 foreach (var image in images)
                 {
                     var webImage = new WebImage(image.InputStream) { FileName = image.FileName };
+                    webImage = webImage.AddImageWatermark("~/Content/Images/Watermark96.png");
                     ImagesManager.UploadImage(webImage, Path.Combine("PhotoAlbum", photoAlbumId.ToString()), true, 120, 120, true);
                 }
                 TempData["Result"] = Resource.ChangesSaved;

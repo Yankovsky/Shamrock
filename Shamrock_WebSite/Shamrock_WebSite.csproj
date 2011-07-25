@@ -90,7 +90,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.ru.resx</DependentUpon>
     </Compile>
-    <Content Include="Content\Images\ImageLink\Banner.jpg" />
+    <Content Include="App_Data\Shamrock.sdf" />
     <Content Include="Content\Images\ImageLink\Facebook.png" />
     <Content Include="Content\Images\Logo3.png" />
     <Content Include="Content\Images\Logo4.png" />
@@ -98,6 +98,9 @@
     <Content Include="Content\Images\Mitki\Mitki2.png" />
     <Content Include="Content\Images\Mitki\Mitki3.png" />
     <Content Include="Content\Images\Mitki\Mitki4.png" />
+    <Content Include="Content\Images\Watermark128.png" />
+    <Content Include="Content\Images\Watermark64.png" />
+    <Content Include="Content\Images\Watermark96.png" />
     <Content Include="Content\Images\WoodTexture.jpg" />
     <Content Include="Content\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\jquery-ui\images\ui-bg_glass_15_5f391b_1x400.png" />
@@ -123,6 +126,7 @@
     <Compile Include="Controllers\PhotoAlbumController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\StaffMemberController.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\PagingHelper.cs" />
     <Compile Include="Helpers\ScriptHelper.cs" />
@@ -145,6 +149,7 @@
       <DependentUpon>ShamrockModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\CollectionExtensions.cs" />
+    <Compile Include="Models\StaffMember.cs" />
     <Compile Include="Models\TableReservation.cs" />
     <Compile Include="Services\ConfigWrapper.cs" />
     <Compile Include="Services\ImagesManager.cs" />
@@ -160,16 +165,14 @@
     <Compile Include="Services\SMSService.cs" />
     <Compile Include="SupportedCulture.cs" />
     <Compile Include="UnityControllerFactory.cs" />
+    <Content Include="google653ae558fdbf5c71.html" />
     <Content Include="Scripts\jquery-ui-1.8.14.custom.js" />
     <Content Include="Scripts\jquery-ui-1.8.14.custom.min.js" />
     <Content Include="sitemap.xml" />
+    <Content Include="yandex_61561b9a2d143d95.html" />
     <Content Include="yandex_67e4cdbca11cef81.html" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Shamrock.sdf" />
-    <Content Include="App_Data\Config.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Content\Images\AlternativeTitle.png" />
     <Content Include="Content\Images\ImageLink\Boat.png" />
     <Content Include="Content\Images\Bookmark.png" />
@@ -187,7 +190,6 @@
     <Content Include="Content\Images\HeaderBackground.png" />
     <Content Include="Content\Images\Home.png" />
     <Content Include="Content\Images\HorizontalDivider.png" />
-    <Content Include="Content\Images\ImageLink\SpecialOffer.png" />
     <Content Include="Content\Images\ImageLink\vkontakte.png" />
     <Content Include="Content\Images\login.png" />
     <Content Include="Content\Images\Logo.png" />
@@ -439,6 +441,12 @@
     <Content Include="Views\ImageLink\GetImageLinksBlock.cshtml" />
     <Content Include="Views\ImageLink\Create.cshtml" />
     <Content Include="Views\ImageLink\_ImageLinkForm.cshtml" />
+    <Content Include="Views\ImageLink\Index.cshtml" />
+    <Content Include="Views\ImageLink\Edit.cshtml" />
+    <Content Include="Views\StaffMember\Create.cshtml" />
+    <Content Include="Views\StaffMember\_StaffMemberForm.cshtml" />
+    <Content Include="Views\StaffMember\Edit.cshtml" />
+    <Content Include="Views\StaffMember\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -457,7 +465,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>45056</DevelopmentServerPort>
+          <DevelopmentServerPort>1818</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

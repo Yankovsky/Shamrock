@@ -18,6 +18,7 @@
           <EntitySet Name="ImageLinks" EntityType="ShamrockModel.Store.ImageLinks" store:Type="Tables" />
           <EntitySet Name="PhotoAlbums" EntityType="ShamrockModel.Store.PhotoAlbums" store:Type="Tables" />
           <EntitySet Name="PhotoAlbums_Locale" EntityType="ShamrockModel.Store.PhotoAlbums_Locale" store:Type="Tables" />
+          <EntitySet Name="StaffMembers" EntityType="ShamrockModel.Store.StaffMembers" store:Type="Tables" />
           <EntitySet Name="TableReservations" EntityType="ShamrockModel.Store.TableReservations" store:Type="Tables" />
           <AssociationSet Name="DishCategories_DishCategories_Locale" Association="ShamrockModel.Store.DishCategories_DishCategories_Locale">
             <End Role="DishCategories" EntitySet="DishCategories" />
@@ -126,13 +127,15 @@
           </Key>
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="MaxWidth" Type="int" Nullable="false" />
+          <Property Name="MaxHeight" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="ImageLinks">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="ImagePath" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="400" />
           <Property Name="Link" Type="nvarchar" MaxLength="400" />
           <Property Name="AlternateText" Type="nvarchar" MaxLength="400" />
           <Property Name="ImageLinkCategoryId" Type="int" Nullable="false" />
@@ -153,6 +156,14 @@
           <Property Name="PhotoAlbumId" Type="int" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="100" />
           <Property Name="Culture" Type="nchar" Nullable="false" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="StaffMembers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="400" />
+          <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="100" />
         </EntityType>
         <EntityType Name="TableReservations">
           <Key>
@@ -297,6 +308,7 @@
             <End Role="ImageLinkCategory" EntitySet="ImageLinkCategories" />
             <End Role="ImageLink" EntitySet="ImageLinks" />
           </AssociationSet>
+          <EntitySet Name="StaffMembers" EntityType="ShamrockModel.StaffMember" />
         </EntityContainer>
         <EntityType Name="Comment">
           <Key>
@@ -491,13 +503,15 @@
           <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Type="String" Name="Name" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ImageLinks" Relationship="ShamrockModel.ImageLinkCategory_ImageLinks" FromRole="ImageLinkCategory" ToRole="ImageLink" />
+          <Property Type="Int32" Name="MaxWidth" Nullable="false" />
+          <Property Type="Int32" Name="MaxHeight" Nullable="false" />
         </EntityType>
         <EntityType Name="ImageLink">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Type="String" Name="ImagePath" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="400" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="Link" MaxLength="400" FixedLength="false" Unicode="true" />
           <Property Type="String" Name="AlternateText" MaxLength="400" FixedLength="false" Unicode="true" />
           <Property Type="Int32" Name="ImageLinkCategoryId" Nullable="false" />
@@ -515,6 +529,14 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="StaffMember">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="400" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Phone" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -632,6 +654,8 @@
           <EntitySetMapping Name="ImageLinkCategories">
             <EntityTypeMapping TypeName="ShamrockModel.ImageLinkCategory">
               <MappingFragment StoreEntitySet="ImageLinkCategories">
+                <ScalarProperty Name="MaxHeight" ColumnName="MaxHeight" />
+                <ScalarProperty Name="MaxWidth" ColumnName="MaxWidth" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
@@ -644,6 +668,15 @@
                 <ScalarProperty Name="AlternateText" ColumnName="AlternateText" />
                 <ScalarProperty Name="Link" ColumnName="Link" />
                 <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StaffMembers">
+            <EntityTypeMapping TypeName="ShamrockModel.StaffMember">
+              <MappingFragment StoreEntitySet="StaffMembers">
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -710,6 +743,7 @@
           <ConnectorPoint PointX="11" PointY="2.09568359375" />
           <ConnectorPoint PointX="11" PointY="3" />
         </AssociationConnector>
+        <EntityTypeShape EntityType="ShamrockModel.StaffMember" Width="1.5" PointX="10.25" PointY="6" Height="1.5956835937500031" />
       </Diagram>
     </Diagrams>
   </Designer>
